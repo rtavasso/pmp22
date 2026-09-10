@@ -201,7 +201,7 @@ def injury(regions):
                 audits.append(dict(region_id=region['region_id'],rat_track=row['track'],
                     source_interval_id=f"rn5:chr10:{row['start']}-{row['end']}",chain_id=candidate['chain_id'],
                     mapped_fraction=candidate['coverage'],aligned_overlap_bp=bp,
-                    accepted=use,exclusion_reason='' if use else 'below_50pct_source_span' if candidate['coverage']<.5 else accepted['status']))
+                    accepted=use,exclusion_reason='not_excluded' if use else 'below_50pct_source_span' if candidate['coverage']<.5 else accepted['status']))
     table(OUT/'rat_mapping_overlap_audit.tsv',audits)
     overlaps=[]
     for region in regions:

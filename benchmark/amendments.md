@@ -23,7 +23,8 @@ genome. Version 1 is a retrospective classification of these fixed external
 labels, not a raw-read pipeline with train-only peak/bias estimation. This is
 a declared deviation from that broader acceptance goal. No count/profile or
 bias-corrected model is claimed.
-# Adversarial review follow-up, 10 September 2026
+
+## Adversarial review follow-up, 10 September 2026
 
 After inspecting v1 test results, add `python -m pmp22_atlas comparability`.
 This recomputes CpG from reference sequence, verifies sequence hashes, exports
