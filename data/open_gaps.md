@@ -1,18 +1,28 @@
-# Open acquisition and evidence gaps
+# Remaining scientific evidence
 
-1. Recover original, donor-resolved human Schwann accessibility data, fragments,
-   peak sets, ontology, permissions, and QC.  Do not equate ENCSR301DUJ and
-   CATlas `kai199` until provenance proves it.
-2. Recover exact historical intronic/distal test sequences and remap them to
-   GRCh38 with retained chain, alignment, ambiguity, and reverse-strand tests.
-3. Resolve Borzoi checkpoint and FANTOM CAGE pooling/label provenance.  The three
-   donor records are distinct, while model labels and source paths conflict.
-4. Download and checksum the rat GEO processed files; reconstruct pools,
-   controls, and library depths before any quantitative comparison.
-5. Locate injury-state raw files and original quantitative tables/supplements.
-6. Verify current ENCODE access, donor identities, controls, and overlap among
-   tibial tracks rather than counting tracks as independent evidence.
-7. Obtain matched human contact evidence or label generic contacts as priors.
-8. No native human perturbation result exists in this repository.  RNA, protein,
-   neighbor-gene, identity/toxicity, and functional assays remain required.
+1. Native human noncoding perturbation on RNA, protein, neighbors and function.
+   Seven dossiers specify the new experiments. This is the main scientific
+   gate, not a missing software command.
+2. Replicated human states crossed within donors. Cultured CAGE versus adult
+   tissue ATAC cannot isolate state; fetal CATlas labels do not solve the design.
+3. Matched human Schwann contact/target evidence. Bulk CTCF, EP300 and distance
+   remain priors, not measured loops.
+4. Historical cloned inserts and rat deletion junctions. Printed human
+   intervals map fully but retain possible 1 bp convention ambiguity. Mouse
+   SE mapping covers only 54.5% of its span.
+5. Original numerical assay uncertainties and mouse effect magnitudes.
+   Author approximations are retained; no figure values or meta-analysis
+   precision are invented.
+6. CATlas kai199/fetal-source reconciliation and Borzoi FANTOM donor-label
+   recipe. PMP22 training exposure itself is resolved. Independent profiles
+   or perturbation labels are needed for broader model claims.
+7. Donor-specific Schwann subset cell counts, FRiP, TSS enrichment and bias
+   estimates. Original source QC is preserved but raw-read processing and
+   count/profile modeling were not performed.
+8. Novelty and confirmatory precision. Known enhancers are not rediscovered
+   as new regulators. Set a minimum useful effect and use pilot donor variance
+   before choosing a powered confirmatory sample size.
 
+Resolved since the pilot: human peak access and ATAC donor paths; three CAGE
+measurements; historical human mappings; GSE63103 injury files; rat checksum
+replay; eleven bulk leads/shared donors; a benchmark with controls and uncertainty.

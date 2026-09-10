@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.gz binary
+*.png binary
+benchmark/splits.tsv -text whitespace=cr-at-eol
+benchmark/protocol.json -text

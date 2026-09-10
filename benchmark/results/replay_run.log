@@ -1,0 +1,16 @@
+Preparing train chr1
+Preparing train chr2
+Preparing validation chr3
+Preparing test chr17
+Preparing test chr22
+Fit GC_CpG C 10.0 validation AP 0.93
+Fit distance_to_annotated_TSS C 0.01 validation AP 0.8921
+Fit SOX10_EGR2_TEAD1_motifs C 0.01 validation AP 0.8557
+Fit 4mer_sequence_logistic C 0.01 validation AP 0.9656
+                    model   subset    n  average_precision    AUROC  Brier_score
+               prevalence all_test 2120           0.500000 0.500000     0.250000
+                   GC_CpG all_test 2120           0.943751 0.942344     0.113797
+distance_to_annotated_TSS all_test 2120           0.909482 0.882178     0.135189
+  SOX10_EGR2_TEAD1_motifs all_test 2120           0.873060 0.872993     0.152143
+   4mer_sequence_logistic all_test 2120           0.965581 0.970585     0.077621
+ permuted_training_labels all_test 2120           0.473150 0.456766     0.261426

@@ -1,0 +1,3 @@
+experiment	biosample	donor	age	age_units	sex	biological_replicate	technical_replicate	pooled_product	note
+ENCSR726QTF	ENCBS227WJZ	ENCDO793LXB	53	year	female	1	2	ENCSR301DUJ / ENCFF439MKP	two donor source experiments; released Schwann peak product is pooled and cannot estimate donor variance
+ENCSR205TUH	ENCBS131WCD	ENCDO271OUW	51	year	female	1	1	ENCSR301DUJ / ENCFF439MKP	two donor source experiments; released Schwann peak product is pooled and cannot estimate donor variance

@@ -1,0 +1,25 @@
+digraph source_overlap {
+  rankdir="LR";
+  "FANTOM5" -> "Borzoi_targets_806_807" [label="training_target_source", style="dashed"];
+  "CATlas" -> "Borzoi_kai199" [label="training_target_source", style="dashed"];
+  "GSE64703" -> "Lopez_Anido_2015" [label="deposit_for_publication", style="dashed"];
+  "GSE64971" -> "Lopez_Anido_2015" [label="deposit_for_publication", style="dashed"];
+  "GSE63103" -> "HUNG2015" [label="deposit_for_publication", style="dashed"];
+  "ENCSR726QTF" -> "ENCSR301DUJ" [label="source_alignment_ENCFF029IGD", style="dashed"];
+  "ENCSR205TUH" -> "ENCSR301DUJ" [label="source_alignment_ENCFF540FVR", style="dashed"];
+  "ENCSR301DUJ" -> "ENCFF602YVR" [label="IDR_peak_derivative", style="dashed"];
+  "ENCSR301DUJ" -> "ENCFF632FMT" [label="broad_peak_derivative", style="dashed"];
+  "ENCSR301DUJ" -> "ENCSR221DFU" [label="identical_peak_MD5", style="dashed"];
+  "ENCFF602YVR" -> "new_sequence_benchmark" [label="fixed_external_labels", style="dashed"];
+  "ENCDO793LXB" -> "ENCSR771YJT" [label="same_donor_tissue_source", style="dashed"];
+  "ENCDO845WKR" -> "ENCSR580XUK" [label="same_donor_tissue_source", style="dashed"];
+  "ENCDO271OUW" -> "ENCSR401ESD" [label="same_donor_tissue_source", style="dashed"];
+  "ENCDO793LXB" -> "ENCSR469POZ" [label="same_donor_tissue_source", style="dashed"];
+  "ENCDO271OUW" -> "ENCSR154GUK" [label="same_donor_tissue_source", style="dashed"];
+  "ENCDO793LXB" -> "ENCSR157ZVP" [label="same_donor_tissue_source", style="dashed"];
+  "ENCDO793LXB" -> "ENCSR479GPU" [label="same_donor_tissue_source", style="dashed"];
+  "ENCDO271OUW" -> "ENCSR272UNO" [label="same_donor_tissue_source", style="dashed"];
+  "ENCDO451RUA" -> "ENCSR648OSR" [label="same_donor_tissue_source", style="dashed"];
+  "ENCDO845WKR" -> "ENCSR796HLX" [label="same_donor_tissue_source", style="dashed"];
+  "ENCDO793LXB" -> "ENCSR858QEL" [label="same_donor_tissue_source", style="dashed"];
+}

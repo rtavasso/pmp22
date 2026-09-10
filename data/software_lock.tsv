@@ -1,6 +1,14 @@
 component	version	reference	purpose
-Python	3.11+	CPython standard library	manifest validation and build
-reference_genome	GRCh38.p14	GENCODE human release 50	planned human coordinate system
-annotation	GENCODE_50	https://www.gencodegenes.org/human/releases.html	planned transcript annotation
-Borzoi	UNPINNED	https://github.com/calico/borzoi	blocked until checkpoint audit
-AlphaGenome	UNPINNED	https://github.com/google-deepmind/alphagenome_research	blocked until checkpoint and terms audit
+Python	3.13.2	CPython	executed analysis
+numpy	2.2.6	requirements-analysis.txt	locked analysis environment
+scipy	1.15.3	requirements-analysis.txt	locked analysis environment
+pandas	2.2.3	requirements-analysis.txt	locked analysis environment
+scikit-learn	1.6.1	requirements-analysis.txt	locked analysis environment
+matplotlib	3.10.3	requirements-analysis.txt	locked analysis environment
+requests	2.32.3	requirements-analysis.txt	locked analysis environment
+pyliftover	0.4.1	requirements-analysis.txt	locked analysis environment
+pybigtools	0.2.4	requirements-analysis.txt	locked analysis environment
+beautifulsoup4	4.13.4	requirements-analysis.txt	locked analysis environment
+reference_genome	UCSC hg38 primary chromosomes	data/resource_lock.json	FASTA source bytes SHA256 pinned; no claim that patch contigs were used
+annotation	GENCODE 50 / bulk quantification GENCODE29	data/resource_lock.json	locus and promoter definitions / original RNA quantification respectively
+Borzoi_source	5c9358222b5026abb733ed5fb84f3f6c77239b37	data/resource_lock.json	training exposure audit only

@@ -6,7 +6,7 @@ import csv
 import gzip
 import hashlib
 import json
-import urllib.request
+import requests
 from pathlib import Path
 
 from .cli import DATA
@@ -38,7 +38,11 @@ def download(force: bool = False) -> dict[str, int]:
             reused += 1
             continue
         temporary = path.with_suffix(path.suffix + ".part")
-        urllib.request.urlretrieve(row["url"], temporary)
+        with requests.get(row["url"], stream=True, timeout=(20, 120)) as response:
+            response.raise_for_status()
+            with temporary.open('wb') as handle:
+                for chunk in response.iter_content(1024 * 1024):
+                    handle.write(chunk)
         if digest(temporary) != row["sha256"]:
             temporary.unlink(missing_ok=True)
             raise ValueError(f"checksum mismatch: {row['filename']}")
@@ -161,7 +165,8 @@ for PNS H3K27ac. These track scales are not assumed comparable.
 
 The FANTOM SDRF extraction independently recovers three distinct Schwann records:
 CNhs12073/donor1, CNhs12345/donor2, and CNhs12621/donor3. It does not resolve the
-Borzoi label/path mismatch or provide downloaded CAGE signal.
+Borzoi label/path mismatch. Donor-specific CAGE measurements are now available
+in the separate human analysis under `data/human/`.
 
 ## Interpretation boundary
 

@@ -1,0 +1,14 @@
+item	observation	handling
+historical_coordinate_convention	Printed UCSC-like intervals lack an independently verified cloned insert sequence	Interpret 1-based closed; preserve possible 1 bp uncertainty; reference FASTA is not cloned DNA
+Schwann_ATAC_thresholds	A and B overlap broader peaks but not IDR-thresholded peaks	Report threshold sensitivity; do not call A/B inactive
+ENCODE_duplicate_peak_warning	ENCSR221DFU leg Schwann annotation has identical peak MD5s	Do not count it as independent evidence
+Schwann_source_age	Pooled portal description says adult/child; traced donor records are females aged 51 and 53	Report actual traced donors and retain original description in snapshot
+FANTOM_model_alias	Borzoi target CNhs12621 label is paired with a CNhs12073 source path	Use distinct original donor files; no donor-holdout claim
+GENCODE_vs_RefSeq_P2	Reference promoter first-exon boundary changes donor1 P2 count 285 to 284	Record annotation sensitivity; P2 dominance unchanged
+historical_gene_model	GENCODE29 ENSG00000230971 transcript now falls under current PMP22 symbol	Keep gene IDs separate; report main PMP22 ENSG00000109099 only
+mouse_SE_orthology	Only 54.5 percent of mouse deletion span aligns under selected chain	Export alignment blocks and gaps; no equivalent human deletion effect
+rat_BED_precision	Eight scientific-notation coordinates have uncertain precision; all outside locus	Reject those rows and preserve source strings; no invented coordinate precision
+rat_BED_endpoints	Many submitted interval ends end in 99	Use as deposited with unresolved convention; no base-exact perturbation inferred
+reporter_effect_precision	Author approximate percentages available but raw values and numerical SDs absent	Keep approximate values and qualitative nulls; no figure digitization
+CSV_float_roundtrip	Default pandas parser can perturb ties by an ULP	Use float_precision=round_trip to reproduce AP exactly from exported predictions
+split_line_endings	Version 1 split bytes were frozen with CRLF	Preserve bytes using explicit serializer and gitattributes; protocol and split hashes stay unchanged

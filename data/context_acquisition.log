@@ -1,0 +1,25 @@
+Acquired ENCFF474ZLP.json: 23,250 bytes
+Acquired ENCFF703WKZ.json: 16,367 bytes
+Acquired ENCFF831KJJ.json: 25,385 bytes
+Acquired ENCFF095QHF.json: 10,788 bytes
+Acquired ENCFF095QHF.bed.gz: 160,933 bytes
+Selected ENCSR401ESD ENCFF095QHF peaks
+Selected ENCSR154GUK ENCFF065MQK IDR thresholded peaks
+Acquired ENCFF425MZT.json: 16,975 bytes
+Acquired ENCFF831KJJ.bed.gz: 630,750 bytes
+Selected ENCSR469POZ ENCFF831KJJ IDR thresholded peaks
+Acquired ENCFF671DNU.json: 16,365 bytes
+Acquired ENCFF474ZLP.bed.gz: 1,274,264 bytes
+Selected ENCSR580XUK ENCFF474ZLP IDR thresholded peaks
+Selected ENCSR272UNO ENCFF398VOV gene quantifications
+Selected ENCSR648OSR ENCFF005RLW gene quantifications
+Selected ENCSR796HLX ENCFF197RQL gene quantifications
+Acquired ENCFF495AYZ.json: 13,546 bytes
+Acquired ENCFF671DNU.bed.gz: 535,607 bytes
+Selected ENCSR479GPU ENCFF671DNU pseudoreplicated peaks
+Acquired ENCFF425MZT.bed.gz: 886,594 bytes
+Selected ENCSR157ZVP ENCFF425MZT pseudoreplicated peaks
+Acquired ENCFF703WKZ.bed.gz: 2,323,999 bytes
+Selected ENCSR771YJT ENCFF703WKZ pseudoreplicated peaks
+Acquired ENCFF495AYZ.tsv: 10,847,278 bytes
+Selected ENCSR858QEL ENCFF495AYZ gene quantifications

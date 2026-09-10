@@ -1,0 +1,12 @@
+experiment	file	filename	output_type	genome_annotation	assembly	selection
+ENCSR771YJT	ENCFF703WKZ	ENCFF703WKZ.bed.gz	pseudoreplicated peaks		GRCh38	output class then newest annotation/release; no locus-based selection
+ENCSR580XUK	ENCFF474ZLP	ENCFF474ZLP.bed.gz	IDR thresholded peaks		GRCh38	output class then newest annotation/release; no locus-based selection
+ENCSR401ESD	ENCFF095QHF	ENCFF095QHF.bed.gz	peaks		GRCh38	output class then newest annotation/release; no locus-based selection
+ENCSR469POZ	ENCFF831KJJ	ENCFF831KJJ.bed.gz	IDR thresholded peaks		GRCh38	output class then newest annotation/release; no locus-based selection
+ENCSR154GUK	ENCFF065MQK	ENCFF065MQK.bed.gz	IDR thresholded peaks		GRCh38	output class then newest annotation/release; no locus-based selection
+ENCSR157ZVP	ENCFF425MZT	ENCFF425MZT.bed.gz	pseudoreplicated peaks		GRCh38	output class then newest annotation/release; no locus-based selection
+ENCSR479GPU	ENCFF671DNU	ENCFF671DNU.bed.gz	pseudoreplicated peaks		GRCh38	output class then newest annotation/release; no locus-based selection
+ENCSR272UNO	ENCFF398VOV	ENCFF398VOV.tsv	gene quantifications	V29	GRCh38	output class then newest annotation/release; no locus-based selection
+ENCSR648OSR	ENCFF005RLW	ENCFF005RLW.tsv	gene quantifications	V29	GRCh38	output class then newest annotation/release; no locus-based selection
+ENCSR796HLX	ENCFF197RQL	ENCFF197RQL.tsv	gene quantifications	V29	GRCh38	output class then newest annotation/release; no locus-based selection
+ENCSR858QEL	ENCFF495AYZ	ENCFF495AYZ.tsv	gene quantifications	V29	GRCh38	output class then newest annotation/release; no locus-based selection

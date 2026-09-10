@@ -43,8 +43,8 @@ class AtlasTest(unittest.TestCase):
             self.assertEqual(expected, {p.name for p in Path(first).iterdir()})
             for name in expected:
                 self.assertEqual((Path(first) / name).read_bytes(), (Path(second) / name).read_bytes())
-            self.assertEqual(5, summary["candidate_count"])
-            self.assertEqual("provisional", json.loads((Path(first) / "atlas_summary.json").read_text())["status"])
+            self.assertEqual(7, summary["candidate_count"])
+            self.assertIn("native_human_validation_pending", json.loads((Path(first) / "atlas_summary.json").read_text())["status"])
 
     def test_effect_region_foreign_keys(self):
         regions = {r["region_id"] for r in read_table("regions.tsv")}

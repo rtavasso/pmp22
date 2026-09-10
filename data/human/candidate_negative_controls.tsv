@@ -1,0 +1,3 @@
+control_id	chrom	start	end	matched_region	gc_fraction	positive_gc	gc_difference	rule	status
+NEG_C_1	chr17	15354300	15354709	PMP22_DISTAL_C	0.46454767726161367	0.46454767726161367	0.0	length matched; GC difference <=0.03; no broad ATAC within 1kb; at least 10kb from known reporter/promoter intervals; no transcript or blacklist	proposed control; experimentally untested; no guarantee of no regulatory function
+NEG_C_2	chr17	15426800	15427209	PMP22_DISTAL_C	0.46454767726161367	0.46454767726161367	0.0	length matched; GC difference <=0.03; no broad ATAC within 1kb; at least 10kb from known reporter/promoter intervals; no transcript or blacklist	proposed control; experimentally untested; no guarantee of no regulatory function

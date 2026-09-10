@@ -1,0 +1,19 @@
+donor	promoter	upstream_flank_bp	grch38_start	grch38_end	hg19_start	hg19_end	minus_strand_tags	tags_per_million	interpretation
+CNhs12073	PMP22_P1	100	15265053	15265460	15168370	15168777	22.0	5.75745	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12345	PMP22_P1	100	15265053	15265460	15168370	15168777	0	0.0	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12621	PMP22_P1	100	15265053	15265460	15168370	15168777	1.0	0.31085	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12073	PMP22_P1	250	15265053	15265610	15168370	15168927	22.0	5.75745	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12345	PMP22_P1	250	15265053	15265610	15168370	15168927	0	0.0	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12621	PMP22_P1	250	15265053	15265610	15168370	15168927	1.0	0.31085	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12073	PMP22_P1	500	15265053	15265860	15168370	15169177	22.0	5.75745	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12345	PMP22_P1	500	15265053	15265860	15168370	15169177	0	0.0	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12621	PMP22_P1	500	15265053	15265860	15168370	15169177	1.0	0.31085	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12073	PMP22_P2	100	15262328	15263290	15165645	15166607	285.0	74.58517	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12345	PMP22_P2	100	15262328	15263290	15165645	15166607	1.0	4.30691	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12621	PMP22_P2	100	15262328	15263290	15165645	15166607	122.0	37.9242	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12073	PMP22_P2	250	15262328	15263440	15165645	15166757	285.0	74.58517	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12345	PMP22_P2	250	15262328	15263440	15165645	15166757	1.0	4.30691	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12621	PMP22_P2	250	15262328	15263440	15165645	15166757	122.0	37.9242	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12073	PMP22_P2	500	15262328	15263690	15165645	15167007	285.0	74.58517	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12345	PMP22_P2	500	15262328	15263690	15165645	15167007	1.0	4.30691	promoter-family CAGE initiation; not mature-RNA isoform abundance
+CNhs12621	PMP22_P2	500	15262328	15263690	15165645	15167007	122.0	37.9242	promoter-family CAGE initiation; not mature-RNA isoform abundance

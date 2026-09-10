@@ -1,59 +1,79 @@
 # Project A — PMP22 regulatory atlas
 
-This repository is an executable, audit-first implementation of the research
-contract in `project_a_regulatory_atlas.html`.  It deliberately separates
-measured evidence, model predictions, and proposed experiments.  The included
-records are a curated **starting atlas**, not new biological or clinical
-findings.
+The public-data computational release includes a human interval atlas,
+donor-resolved CAGE, Schwann and bulk-nerve evidence, published perturbation
+effects, an executed genomic benchmark, and seven experimental dossiers.
+**Read [report.html](report.html)** for the findings and their limits.
 
-**Read the succinct findings report:** [`report.html`](report.html)
+The original project_a_regulatory_atlas.html remains the research contract.
+The earlier branch contained a rat processed-track pilot. This continuation
+does not assert native human regulatory causality, a human state effect or
+therapeutic efficacy. [COMPLETION_PLAN.md](COMPLETION_PLAN.md) provides the
+acceptance audit; [METHODS.md](METHODS.md) explains the analyses.
 
-## Quick start
+## Reproduce
 
-```bash
-python -m pmp22_atlas validate
-python -m pmp22_atlas download
-python -m pmp22_atlas analyze
-python -m pmp22_atlas build --output build
-python -m unittest discover -s tests -v
-```
+Python 3.13.2 was used. Create a virtual environment and install
+requirements-analysis.txt, then run these commands with its Python executable:
 
-The build command validates every input before producing:
+    python scripts/restore_resources.py
+    python -m pmp22_atlas download
+    python -m pmp22_atlas analyze
+    python -m pmp22_atlas human
+    python -m pmp22_atlas context
+    python scripts/curate_evidence.py
+    python scripts/build_dossiers.py
+    python -m pmp22_atlas benchmark
+    python -m pmp22_atlas supplemental
+    python -m pmp22_atlas build --output data/release
+    python -m pmp22_atlas report
+    python -m unittest discover -s tests -v
 
-* `build/evidence_matrix.tsv`, one row per region/evidence layer;
-* `build/candidate_panel.tsv`, the ranked, explicitly non-probabilistic panel;
-* `build/source_overlap.dot`, a Graphviz source/exposure graph; and
-* `build/atlas_summary.json`, machine-readable counts and unresolved gaps.
+For example, python -m venv .venv followed by the environment's Python
+-m pip install -r requirements-analysis.txt installs the analysis packages.
+On Windows that executable is .venv/Scripts/python.exe; on Unix it is
+.venv/bin/python. uv pip install --python <executable> -r
+requirements-analysis.txt is an alternative when pip is unavailable.
 
-## Data contract
+A fresh full replay downloads several GB of public reference/assay data.
+Compressed public metadata snapshots preserve the acquired API responses
+including changing timestamps. Large references, assays and papers stay outside
+Git. resource_lock.json and download_manifest.tsv pin SHA-256; ENCODE downloads
+also check publisher MD5. Changed remote bytes fail explicitly. The original
+benchmark split and protocol refuse overwrite on a mismatching replay.
 
-All genomic exports use zero-based, half-open intervals.  Unknown coordinates
-are represented by an empty value, never invented.  `evidence_status` is one of
-`measured`, `predicted`, `proposed`, or `missing`; those categories must not be
-collapsed.  Candidate priority is an ordinal, rule-based triage score and must
-not be interpreted as probability of efficacy.
+The report, measurements, predictions, split IDs, model coefficients,
+effects and source records are committed and readable without raw downloads.
+Report generation uses committed tables and does not refit models.
 
-The committed seed records capture only facts supported by the handoff.  Rows
-with unresolved human source, donor, interval, or exposure metadata stay
-explicitly unresolved in `data/open_gaps.md`.  Raw assay ingestion and native
-human perturbation remain acquisition/experimental dependencies.
+## Results
 
-## Executed processed-data analysis
+- Six historical human constructs map uniquely and reciprocally to GRCh38;
+  nine human intervals include promoter families and the distal envelope.
+- Distal C and the intronic element have stringent pooled Schwann ATAC support.
+  A and B appear only at the broader Schwann peak threshold.
+- Cultured donor1 has 22 P1 / 285 P2 CAGE tags; donor3 has 1 / 122. Donor2
+  has only 0 / 1 tags and cannot support a precise promoter comparison.
+- Eleven bulk-tibial assays represent four donors, overlapping the two ATAC
+  donors. They are not eleven independent donor validations.
+- The sequence composite reaches AP 0.966 on 2,120 held-out genomic windows
+  but 0.784 on 600 GC-matched windows. Distance-to-TSS reaches 0.771 there;
+  the paired AP difference CI includes zero. Sequence-specific superiority,
+  disease prediction and enhancer-to-gene links are not established.
+- Standard Borzoi splits place PMP22 and its centered 524,288 bp contexts
+  in training fold7. No independent PMP22 test or foundation-model
+  head-to-head comparison is claimed.
 
-The pinned GEO peak/signal tracks, GEO SOFT records, FANTOM SDRF, and UCSC rn5
-RefGene table have been downloaded and checksum-verified. Raw downloads are
-excluded from Git because they total roughly 160 MB; their URLs and SHA-256
-digests are committed in `data/download_manifest.tsv`. The reproducible locus
-slice and results are committed under `data/derived/`.
+## Deliverables
 
-The analysis uses the RefGene Pmp22 span plus 1 Mb on each side. It is a
-descriptive overlap/signal calculation on submitter-processed tracks, not a
-differential test. See `data/derived/analysis_report.md` for results and limits.
+data/human/ contains observations, coordinate audits, BED/FASTA, bulk context,
+rodent orthology and QC. data/assay_effects.tsv holds 22 typed published
+records including negative mutations. benchmark/results/ holds predictions,
+uncertainty and controls. data/release/ contains the evidence matrix and
+candidate panel. candidate_dossiers/ contains seven hypotheses and the B/D
+handoff. data/open_gaps.md identifies the remaining scientific dependencies.
 
-## Layout
-
-* `data/` — versioned manifests and evidence tables.
-* `candidate_dossiers/` — falsifiable hypotheses and decisive experiments.
-* `pmp22_atlas/` — dependency-free validation and deterministic build CLI.
-* `tests/` — schema, coordinate, foreign-key, and build regression tests.
-* `benchmark/README.md` — frozen benchmark contract and stop conditions.
+Exports are 0-based and half-open. Historical printed coordinates retain a
+possible 1 bp convention ambiguity until inserts/junctions are confirmed.
+Reference FASTA is not a sequenced plasmid. Candidate priority is ordinal,
+never a probability or a predicted human effect size.

@@ -1,0 +1,5 @@
+track	genome_records	locus_records	rejected_coordinates	reported_test	new_test
+InjuryDB_peaks	4312	3	0	original authors DBChIP	none; reuse of submitted interval labels
+ShamDB_peaks	3290	25	0	original authors DBChIP	none; reuse of submitted interval labels
+peaks_Injury	31894	38	2	original authors peak calls	none; reuse of submitted interval labels
+peaks_Sham	28114	83	6	original authors peak calls	none; reuse of submitted interval labels

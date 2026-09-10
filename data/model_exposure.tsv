@@ -1,6 +1,5 @@
 model_id	checkpoint	source_id	interval_exposure	source_exposure	assay_exposure	status	notes
-Borzoi	unfrozen	FANTOM5	unknown	known	known_CAGE	unresolved	Resolve donor pooling and checkpoint before evaluation
-Borzoi	unfrozen	CATlas	unknown	known	known_ATAC	unresolved	kai199 source/donors unresolved
-Borzoi	unfrozen	ENCODE_tibial_tracks	unknown	known	known_multiple	unresolved	Audit each target and checkpoint
-AlphaGenome	all_folds_quickstart	unknown	known_possible	unknown	unknown	unresolved	All-fold inference cannot certify a genomic holdout
-ChromBPNet	to_be_trained	candidate_human_ATAC	train_split_required	train_split_required	ATAC	pending	Fit bias and peaks on training data only
+Borzoi	standard replicas 0-3; shared split	FANTOM5;CATlas;tibial tracks	PMP22 fold7 training; centered input context audited	known or unresolved donor overlap	RNA/CAGE/ATAC	ineligible_PMP22_holdout	No checkpoint inference run; see human/borzoi_locus_exposure.tsv
+new_logistic_models	frozen coefficients and dataset lock	ENCFF602YVR	train chr1/2; val chr3; test chr17/22	same pooled product	binary accessibility	executed	Genomic holdout only; no donor/state/perturbation generalization
+AlphaGenome	not selected; no checkpoint run	unknown	not certified	not certified	multimodal	not_evaluated	No independent matched perturbation labels; no head-to-head claim
+ChromBPNet	not trained	ENCFF602YVR	not applicable	one pooled product	counts/profile	not_evaluated	Peak-only release analysis does not fit read-level bias/count/profile models

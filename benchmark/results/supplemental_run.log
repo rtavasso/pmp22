@@ -1,0 +1,10 @@
+Conservation extracted chr3 2166
+Conservation extracted chr2 2560
+Conservation extracted chr1 3356
+Conservation extracted chr22 610
+Conservation extracted chr17 1510
+                 model          subset    n  average_precision    AUROC  Brier_score
+          conservation        all_test 2120           0.712567 0.735863     0.213054
+          conservation GC_matched_test  600           0.689166 0.716194     0.222358
+4mer_sequence_logistic   shift_-100_bp 2120           0.963809 0.966651     0.081803
+4mer_sequence_logistic    shift_100_bp 2120           0.964050 0.968594     0.077819

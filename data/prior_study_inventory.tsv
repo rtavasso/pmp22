@@ -1,5 +1,14 @@
 source_id	citation	species	assay	result_scope	access_status	novelty_note
-JONES2011	Jones et al. 2011 J Neurosci DOI:10.1523/JNEUROSCI.5893-10.2011	human/rodent	reporter_and_regulatory	intronic_PMP22_regulation	publication_confirmed	Extract supplement and negative results before novelty claim
-JBC2015	DOI:10.1074/jbc.M114.622878	rodent	injury_state_regulatory	peripheral_nerve_injury_enhancer	publication_confirmed	Raw accession unresolved
-GSE64703	GEO GSE64703 / SRP051729	rat	SOX10_ChIP-seq	PNS_CNS_binding	catalog_inspected	Derived publication is same source
-GSE64971	GEO GSE64971 / SRP052233	rat	H3K27ac_ChIP-seq	P15_sciatic_activity	catalog_inspected	Single IP prevents between-animal inference
+JONES2011	Jones et al. 2011; doi:10.1523/JNEUROSCI.5893-10.2011; PMC3100536	human/rodent	reporter_and_binding	intronic regulatory mechanism	PDF inspected; intervals and selected effects extracted	Known element; no novelty claim
+JONES2012	Jones et al. 2012; doi:10.1093/hmg/ddr595; PMC3298281	human/rat/zebrafish	reporter_and_binding	A/B/C enhancers and positive/negative mutations	PDF inspected; exact printed intervals and effect text extracted	Known elements; human native function remains separate
+PANTERA2018	Pantera et al. 2018; doi:10.1093/hmg/ddy191; PMC6077802	rat	native_SE_deletion	allele-resolved endogenous RNA in triploid S16 reporter line	PDF inspected; approximate effects and controls extracted	Established causal rodent prior; clone junction supplement unresolved
+PANTERA2020	Pantera et al. 2020; doi:10.1093/hmg/ddaa082; PMC7322568	mouse	native_SE_deletion	age-specific RNA/protein and nerve vulnerability	PDF inspected; interval and genotype n extracted	Does not test activation rescue
+HUNG2015	Hung et al. 2015; doi:10.1074/jbc.M114.622878; PMC4358118	rat	injury_H3K27ac	3 day injury versus sham	PDF and GSE63103 processed files analyzed	Publication and deposit are one evidence source
+GSE63103	GEO GSE63103; Hung 2015	rat	H3K27ac_ChIP	injury and sham peaks and differential peak labels	four BED files and full SOFT downloaded	Reuse author differential labels; no new differential test
+GSE64703	GEO GSE64703 / SRP051729; Lopez-Anido et al. 2015	rat	SOX10_ChIP	PNS/CNS descriptive occupancy	12-input pilot checksums reverified	Not Ma et al.; original publication and deposit share experiments
+GSE64971	GEO GSE64971 / SRP052233; Lopez-Anido et al. 2015	rat	H3K27ac_ChIP	P15 sciatic activity	processed files and metadata analyzed	One IP and input; no biological variance estimate
+FANTOM5	FANTOM5 primary-cell hCAGE and SDRF	human	CAGE	three donor-labeled cultured Schwann samples	all three CTSS files downloaded and counted	Model donor label/path mismatch retained
+ENCSR301DUJ	ENCODE ENCSR301DUJ; ENCFF602YVR and ENCFF632FMT	human	snATAC_pseudobulk	adult tibial Schwann pooled accessibility	two original donor paths traced; both peak thresholds analyzed	Cannot provide donor-generalization or matched state effects
+GENCODE_R50	GENCODE release 50 via UCSC wgEncodeGencodeCompV50	human	annotation	minus-strand transcript and promoter families	locus and full benchmark chromosomes pinned	Annotation is not measured function
+YOSHIOKA2023	Yoshioka et al. 2023; doi:10.1038/s43856-023-00400-y; PMC10684506	human	PMP22_copy_deletion	CMT1A iPSC-derived Schwann correction	PDF inspected; excluded from enhancer effect labels	Coding-copy removal is not noncoding-only regulation
+JUN2022	PMC9410756	rodent	JUN/injury regulatory study	repair-associated regulatory context	PDF inspected; context only	Not independent human state validation

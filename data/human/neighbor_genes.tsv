@@ -1,0 +1,25 @@
+symbol	chrom	start	end	strand	transcripts	note
+CDRT4	chr17	15433936	15475733	-	11	GENCODE50 locus annotation; not an enhancer-to-gene link
+CDRT7	chr17	15030974	15031957	+	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+CDRT8	chr17	15104978	15107133	-	2	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000232058	chr17	15014750	15052276	+	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000237377	chr17	15276561	15291983	-	5	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000251537	chr17	15571490	15651653	-	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000265445	chr17	15260957	15312026	+	5	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000266538	chr17	15530772	15531089	-	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000266667	chr17	15379863	15417888	-	6	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000279567	chr17	15365322	15365877	+	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000279660	chr17	15260512	15261841	+	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000287307	chr17	15062086	15104517	-	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000298674	chr17	15341108	15349513	+	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000303780	chr17	15156721	15159045	+	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+ENSG00000306201	chr17	15077370	15085585	+	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+FBXW10B	chr17	15565483	15619704	-	6	GENCODE50 locus annotation; not an enhancer-to-gene link
+MIR4731	chr17	15251626	15251696	-	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+PMP22	chr17	15176315	15272292	-	58	GENCODE50 locus annotation; not an enhancer-to-gene link
+RN7SL792P	chr17	15408383	15408688	+	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+RNU6-799P	chr17	15311344	15311451	+	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+SNORA74	chr17	15574018	15574198	+	1	GENCODE50 locus annotation; not an enhancer-to-gene link
+TEKT3	chr17	15303810	15341632	-	11	GENCODE50 locus annotation; not an enhancer-to-gene link
+TVP23C	chr17	15502263	15563595	-	10	GENCODE50 locus annotation; not an enhancer-to-gene link
+TVP23C-CDRT4	chr17	15436020	15563561	-	5	GENCODE50 locus annotation; not an enhancer-to-gene link

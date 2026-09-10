@@ -1,0 +1,4 @@
+interval_id	species	assembly	published_interval	source	locator	status	human_transfer
+RAT_SE_CLONES_C6_C8	rat	rn5	approximately 38 kb deletion; exact clone junctions not recovered	PANTERA2018	Methods guide sequences and Supplementary Fig S1-S3	Unresolved exact junction; retrieval route preserved	Do not substitute human A-C envelope as the tested interval
+MOUSE_SE	mouse	mm10	chr11:63001867-63042405	PANTERA2020	Fig 1 caption	Printed interval mapped; possible 1 bp convention ambiguity	54.5 percent aligned; see human/mouse_se_orthology.tsv
+HUMAN_UPSTREAM_DUPLICATION_MRO	human	source printed as hg36; original patient build needs confirmation	chr17:15143663-15311619	PANTERA2018	Fig 1 caption citing original upstream-duplication studies	Clinical broad-overlap prior; not fine-mapped or plotted as enhancer	Do not relabel nonstandard build string as GRCh38

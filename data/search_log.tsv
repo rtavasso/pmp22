@@ -1,0 +1,12 @@
+date	type	query_or_route	result	scope
+2026-09-10	targeted_prior_retrieval	Original contract Jones2011/Jones2012/Pantera2018/Pantera2020 PMID/PMC leads	Original PDF Methods and results inspected; paper URLs and hashes locked	Targeted evidence audit; not a systematic review
+2026-09-10	targeted_prior_retrieval	Hung2015 DOI 10.1074/jbc.M114.622878	Recovered GSE63103 from publication; downloaded four BEDs and SOFT	Accession discovery from original source
+2026-09-10	targeted_prior_retrieval	PMC10684506	Human whole-copy deletion excluded from noncoding-only effect labels	Intervention eligibility audit
+2026-09-10	source_reconciliation	ENCSR301DUJ derived_from to ENCFF029IGD and ENCFF540FVR	Traced two adult donor experiments and public source QC	Analyzed source provenance
+2026-09-10	source_reconciliation	ENCODE matching-MD5 audit to ENCFF414RAQ and ENCFF251PBC	Alternate ENCSR221DFU leg Schwann annotation contains duplicate peak bytes	Not independent validation
+2026-09-10	source_reconciliation	FANTOM primary-cell hCAGE directory and original SDRF	Separate CNhs12073/CNhs12345/CNhs12621 CTSS files; donor2 sparse	Does not resolve pretrained pooling recipe
+2026-09-10	targeted_inventory	Eleven bulk tibial ENCSR leads in original contract	Metadata inspected; output-class and release-based GRCh38 products selected	Not donor-independent cohorts
+2026-09-10	web_query	25974668 Lopez Anido Sox10 peripheral central nervous system	PMCID PMC4644515 confirms publication attribution	Primary-source attribution correction
+2026-09-10	web_query	23966833 Sox10 ChIP CNS	No additional claim accepted from general search results; GEO retains both publication identifiers	No asserted additional independence
+2026-09-10	reference_retrieval	UCSC hg38/phastCons100way directory	Official per-chromosome conservation files acquired	Post-test supplemental comparator
+2026-09-10	model_source_audit	Borzoi official README, targets_human, sequences_human and source commit	Standard test fold3 / validation fold4; PMP22 and context in fold7	Eligibility resolved; no checkpoint inference run

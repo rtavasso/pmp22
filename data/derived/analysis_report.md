@@ -27,7 +27,8 @@ for PNS H3K27ac. These track scales are not assumed comparable.
 
 The FANTOM SDRF extraction independently recovers three distinct Schwann records:
 CNhs12073/donor1, CNhs12345/donor2, and CNhs12621/donor3. It does not resolve the
-Borzoi label/path mismatch or provide downloaded CAGE signal.
+Borzoi label/path mismatch. Donor-specific CAGE measurements are now available
+in the separate human analysis under `data/human/`.
 
 ## Interpretation boundary
 

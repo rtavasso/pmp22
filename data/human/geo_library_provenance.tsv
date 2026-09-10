@@ -1,0 +1,19 @@
+source	sample_id	title	experiment	runs	read_count	library_layout	animals_per_pool	control	raw_reprocessing
+GSE64703	GSM1577133	Spinal cord 1 Sox10 ChIP-seq	SRX831350	SRR1743285	37609463	SINGLE	not resolved from deposited sample metadata	IP	not performed; archive read depth is not effective mapped depth
+GSE64703	GSM1577134	Spinal cord 2 Sox10 ChIP-seq	SRX831351	SRR1743286;SRR1743287	33551286	SINGLE	not resolved from deposited sample metadata	IP	not performed; archive read depth is not effective mapped depth
+GSE64703	GSM1577135	Sciatic nerve 1 Sox10 ChIP-seq	SRX831352	SRR1743288	29579628	SINGLE	not resolved from deposited sample metadata	IP	not performed; archive read depth is not effective mapped depth
+GSE64703	GSM1577136	Sciatic nerve 2 Sox10 ChIP-seq	SRX831353	SRR1743289	154586542	SINGLE	not resolved from deposited sample metadata	IP	not performed; archive read depth is not effective mapped depth
+GSE64703	GSM1577137	Spinal cord 1 input	SRX831354	SRR1743290	35608252	SINGLE	not resolved from deposited sample metadata	input	not performed; archive read depth is not effective mapped depth
+GSE64703	GSM1577138	Spinal cord 2 input	SRX831355	SRR1743291	111820759	SINGLE	not resolved from deposited sample metadata	input	not performed; archive read depth is not effective mapped depth
+GSE64703	GSM1577139	Sciatic nerve 1 input	SRX831356	SRR1743292	91787659	SINGLE	not resolved from deposited sample metadata	input	not performed; archive read depth is not effective mapped depth
+GSE64703	GSM1577140	Sciatic nerve 2 input	SRX831357	SRR1743293	36341204	SINGLE	not resolved from deposited sample metadata	input	not performed; archive read depth is not effective mapped depth
+GSE64971	GSM1585357	Sciatic nerve H3K27ac ChIP-seq	SRX843002	SRR1758740	159562838	SINGLE	not resolved from deposited sample metadata	IP	not performed; archive read depth is not effective mapped depth
+GSE64971	GSM1585358	Sciatic nerve input	SRX843003	SRR1758741	108246713	SINGLE	not resolved from deposited sample metadata	input	not performed; archive read depth is not effective mapped depth
+GSE63103	GSM1541278	Sham 1 H3K27ac ChIP-seq	SRX754750	SRR1645296	40287870	SINGLE	not resolved from deposited sample metadata	IP	not performed; archive read depth is not effective mapped depth
+GSE63103	GSM1541279	Sham 2 H3K27ac ChIP-seq	SRX754751	SRR1645297	29495516	SINGLE	not resolved from deposited sample metadata	IP	not performed; archive read depth is not effective mapped depth
+GSE63103	GSM1541280	Injury 1 H3K27ac ChIP-seq	SRX754752	SRR1645298	24681625	SINGLE	not resolved from deposited sample metadata	IP	not performed; archive read depth is not effective mapped depth
+GSE63103	GSM1541281	Injury 2 H3K27ac ChIP-seq	SRX754753	SRR1645299	53099099	SINGLE	not resolved from deposited sample metadata	IP	not performed; archive read depth is not effective mapped depth
+GSE63103	GSM1541282	Sham 1 input	SRX754754	SRR1645300	21297471	SINGLE	not resolved from deposited sample metadata	input	not performed; archive read depth is not effective mapped depth
+GSE63103	GSM1541283	Sham 2 input	SRX754755	SRR1645301	39351486	SINGLE	not resolved from deposited sample metadata	input	not performed; archive read depth is not effective mapped depth
+GSE63103	GSM1541284	Injury 1 input	SRX754756	SRR1645302	38164305	SINGLE	not resolved from deposited sample metadata	input	not performed; archive read depth is not effective mapped depth
+GSE63103	GSM1541285	Injury 2 input	SRX754757	SRR1645303	42439666	SINGLE	not resolved from deposited sample metadata	input	not performed; archive read depth is not effective mapped depth

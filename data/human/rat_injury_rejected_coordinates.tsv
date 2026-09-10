@@ -1,0 +1,9 @@
+track	chrom	original_start	original_end	reason
+peaks_Injury	chr10	4.00E+06	4000899	scientific_notation_coordinate_precision_ambiguous
+peaks_Injury	chr8	4.60E+07	46000299	scientific_notation_coordinate_precision_ambiguous
+peaks_Sham	chr7	7.00E+05	700199	scientific_notation_coordinate_precision_ambiguous
+peaks_Sham	chr6	1.19E+08	119000499	scientific_notation_coordinate_precision_ambiguous
+peaks_Sham	chr2	8.40E+07	84000199	scientific_notation_coordinate_precision_ambiguous
+peaks_Sham	chr2	4.30E+07	43000499	scientific_notation_coordinate_precision_ambiguous
+peaks_Sham	chr9	1.13E+08	113000399	scientific_notation_coordinate_precision_ambiguous
+peaks_Sham	chr18	2.90E+07	29000299	scientific_notation_coordinate_precision_ambiguous

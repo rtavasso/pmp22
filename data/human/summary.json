@@ -1,0 +1,349 @@
+{
+  "regions": 9,
+  "source_donors": 2,
+  "human_cage_donors": 3,
+  "activity": [
+    {
+      "region_id": "PMP22_INTRONIC",
+      "schwann_atac_unique_peak_intervals": 1,
+      "atac_peak_signal_max": 7.22022,
+      "conservation_covered_bp": 243,
+      "phastcons100way_mean": 0.2179,
+      "inference": "observed_accessibility_or_conservation_not_causal_assignment",
+      "broad_atac_unique_peak_intervals": 1,
+      "atac_threshold_status": "IDR_supported"
+    },
+    {
+      "region_id": "PMP22_INTRONIC_TRANSGENE",
+      "schwann_atac_unique_peak_intervals": 1,
+      "atac_peak_signal_max": 7.22022,
+      "conservation_covered_bp": 1647,
+      "phastcons100way_mean": 0.0819,
+      "inference": "observed_accessibility_or_conservation_not_causal_assignment",
+      "broad_atac_unique_peak_intervals": 1,
+      "atac_threshold_status": "IDR_supported"
+    },
+    {
+      "region_id": "PMP22_P2_REPORTER",
+      "schwann_atac_unique_peak_intervals": 1,
+      "atac_peak_signal_max": 2.92479,
+      "conservation_covered_bp": 436,
+      "phastcons100way_mean": 0.3994,
+      "inference": "observed_accessibility_or_conservation_not_causal_assignment",
+      "broad_atac_unique_peak_intervals": 1,
+      "atac_threshold_status": "IDR_supported"
+    },
+    {
+      "region_id": "PMP22_DISTAL_A",
+      "schwann_atac_unique_peak_intervals": 0,
+      "atac_peak_signal_max": "",
+      "conservation_covered_bp": 296,
+      "phastcons100way_mean": 0.344,
+      "inference": "observed_accessibility_or_conservation_not_causal_assignment",
+      "broad_atac_unique_peak_intervals": 1,
+      "atac_threshold_status": "broad_only"
+    },
+    {
+      "region_id": "PMP22_DISTAL_B",
+      "schwann_atac_unique_peak_intervals": 0,
+      "atac_peak_signal_max": "",
+      "conservation_covered_bp": 397,
+      "phastcons100way_mean": 0.4973,
+      "inference": "observed_accessibility_or_conservation_not_causal_assignment",
+      "broad_atac_unique_peak_intervals": 1,
+      "atac_threshold_status": "broad_only"
+    },
+    {
+      "region_id": "PMP22_DISTAL_C",
+      "schwann_atac_unique_peak_intervals": 1,
+      "atac_peak_signal_max": 4.49827,
+      "conservation_covered_bp": 409,
+      "phastcons100way_mean": 0.5788,
+      "inference": "observed_accessibility_or_conservation_not_causal_assignment",
+      "broad_atac_unique_peak_intervals": 1,
+      "atac_threshold_status": "IDR_supported"
+    },
+    {
+      "region_id": "PMP22_P1",
+      "schwann_atac_unique_peak_intervals": 0,
+      "atac_peak_signal_max": "",
+      "conservation_covered_bp": 207,
+      "phastcons100way_mean": 0.3298,
+      "inference": "observed_accessibility_or_conservation_not_causal_assignment",
+      "broad_atac_unique_peak_intervals": 0,
+      "atac_threshold_status": "not_detected_in_released_peaks"
+    },
+    {
+      "region_id": "PMP22_P2",
+      "schwann_atac_unique_peak_intervals": 1,
+      "atac_peak_signal_max": 2.92479,
+      "conservation_covered_bp": 762,
+      "phastcons100way_mean": 0.2435,
+      "inference": "observed_accessibility_or_conservation_not_causal_assignment",
+      "broad_atac_unique_peak_intervals": 1,
+      "atac_threshold_status": "IDR_supported"
+    },
+    {
+      "region_id": "PMP22_DISTAL",
+      "schwann_atac_unique_peak_intervals": 1,
+      "atac_peak_signal_max": 4.49827,
+      "conservation_covered_bp": 32463,
+      "phastcons100way_mean": 0.044,
+      "inference": "observed_accessibility_or_conservation_not_causal_assignment",
+      "broad_atac_unique_peak_intervals": 4,
+      "atac_threshold_status": "IDR_supported"
+    }
+  ],
+  "promoter_cage": [
+    {
+      "donor": "CNhs12073",
+      "promoter": "PMP22_P1",
+      "upstream_flank_bp": 100,
+      "grch38_start": 15265053,
+      "grch38_end": 15265460,
+      "hg19_start": 15168370,
+      "hg19_end": 15168777,
+      "minus_strand_tags": 22.0,
+      "tags_per_million": 5.75745,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12345",
+      "promoter": "PMP22_P1",
+      "upstream_flank_bp": 100,
+      "grch38_start": 15265053,
+      "grch38_end": 15265460,
+      "hg19_start": 15168370,
+      "hg19_end": 15168777,
+      "minus_strand_tags": 0,
+      "tags_per_million": 0.0,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12621",
+      "promoter": "PMP22_P1",
+      "upstream_flank_bp": 100,
+      "grch38_start": 15265053,
+      "grch38_end": 15265460,
+      "hg19_start": 15168370,
+      "hg19_end": 15168777,
+      "minus_strand_tags": 1.0,
+      "tags_per_million": 0.31085,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12073",
+      "promoter": "PMP22_P1",
+      "upstream_flank_bp": 250,
+      "grch38_start": 15265053,
+      "grch38_end": 15265610,
+      "hg19_start": 15168370,
+      "hg19_end": 15168927,
+      "minus_strand_tags": 22.0,
+      "tags_per_million": 5.75745,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12345",
+      "promoter": "PMP22_P1",
+      "upstream_flank_bp": 250,
+      "grch38_start": 15265053,
+      "grch38_end": 15265610,
+      "hg19_start": 15168370,
+      "hg19_end": 15168927,
+      "minus_strand_tags": 0,
+      "tags_per_million": 0.0,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12621",
+      "promoter": "PMP22_P1",
+      "upstream_flank_bp": 250,
+      "grch38_start": 15265053,
+      "grch38_end": 15265610,
+      "hg19_start": 15168370,
+      "hg19_end": 15168927,
+      "minus_strand_tags": 1.0,
+      "tags_per_million": 0.31085,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12073",
+      "promoter": "PMP22_P1",
+      "upstream_flank_bp": 500,
+      "grch38_start": 15265053,
+      "grch38_end": 15265860,
+      "hg19_start": 15168370,
+      "hg19_end": 15169177,
+      "minus_strand_tags": 22.0,
+      "tags_per_million": 5.75745,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12345",
+      "promoter": "PMP22_P1",
+      "upstream_flank_bp": 500,
+      "grch38_start": 15265053,
+      "grch38_end": 15265860,
+      "hg19_start": 15168370,
+      "hg19_end": 15169177,
+      "minus_strand_tags": 0,
+      "tags_per_million": 0.0,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12621",
+      "promoter": "PMP22_P1",
+      "upstream_flank_bp": 500,
+      "grch38_start": 15265053,
+      "grch38_end": 15265860,
+      "hg19_start": 15168370,
+      "hg19_end": 15169177,
+      "minus_strand_tags": 1.0,
+      "tags_per_million": 0.31085,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12073",
+      "promoter": "PMP22_P2",
+      "upstream_flank_bp": 100,
+      "grch38_start": 15262328,
+      "grch38_end": 15263290,
+      "hg19_start": 15165645,
+      "hg19_end": 15166607,
+      "minus_strand_tags": 285.0,
+      "tags_per_million": 74.58517,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12345",
+      "promoter": "PMP22_P2",
+      "upstream_flank_bp": 100,
+      "grch38_start": 15262328,
+      "grch38_end": 15263290,
+      "hg19_start": 15165645,
+      "hg19_end": 15166607,
+      "minus_strand_tags": 1.0,
+      "tags_per_million": 4.30691,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12621",
+      "promoter": "PMP22_P2",
+      "upstream_flank_bp": 100,
+      "grch38_start": 15262328,
+      "grch38_end": 15263290,
+      "hg19_start": 15165645,
+      "hg19_end": 15166607,
+      "minus_strand_tags": 122.0,
+      "tags_per_million": 37.9242,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12073",
+      "promoter": "PMP22_P2",
+      "upstream_flank_bp": 250,
+      "grch38_start": 15262328,
+      "grch38_end": 15263440,
+      "hg19_start": 15165645,
+      "hg19_end": 15166757,
+      "minus_strand_tags": 285.0,
+      "tags_per_million": 74.58517,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12345",
+      "promoter": "PMP22_P2",
+      "upstream_flank_bp": 250,
+      "grch38_start": 15262328,
+      "grch38_end": 15263440,
+      "hg19_start": 15165645,
+      "hg19_end": 15166757,
+      "minus_strand_tags": 1.0,
+      "tags_per_million": 4.30691,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12621",
+      "promoter": "PMP22_P2",
+      "upstream_flank_bp": 250,
+      "grch38_start": 15262328,
+      "grch38_end": 15263440,
+      "hg19_start": 15165645,
+      "hg19_end": 15166757,
+      "minus_strand_tags": 122.0,
+      "tags_per_million": 37.9242,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12073",
+      "promoter": "PMP22_P2",
+      "upstream_flank_bp": 500,
+      "grch38_start": 15262328,
+      "grch38_end": 15263690,
+      "hg19_start": 15165645,
+      "hg19_end": 15167007,
+      "minus_strand_tags": 285.0,
+      "tags_per_million": 74.58517,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12345",
+      "promoter": "PMP22_P2",
+      "upstream_flank_bp": 500,
+      "grch38_start": 15262328,
+      "grch38_end": 15263690,
+      "hg19_start": 15165645,
+      "hg19_end": 15167007,
+      "minus_strand_tags": 1.0,
+      "tags_per_million": 4.30691,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    },
+    {
+      "donor": "CNhs12621",
+      "promoter": "PMP22_P2",
+      "upstream_flank_bp": 500,
+      "grch38_start": 15262328,
+      "grch38_end": 15263690,
+      "hg19_start": 15165645,
+      "hg19_end": 15167007,
+      "minus_strand_tags": 122.0,
+      "tags_per_million": 37.9242,
+      "interpretation": "promoter-family CAGE initiation; not mature-RNA isoform abundance"
+    }
+  ],
+  "rat_injury": [
+    {
+      "track": "InjuryDB_peaks",
+      "genome_records": 4312,
+      "locus_records": 3,
+      "rejected_coordinates": 0,
+      "reported_test": "original authors DBChIP",
+      "new_test": "none; reuse of submitted interval labels"
+    },
+    {
+      "track": "ShamDB_peaks",
+      "genome_records": 3290,
+      "locus_records": 25,
+      "rejected_coordinates": 0,
+      "reported_test": "original authors DBChIP",
+      "new_test": "none; reuse of submitted interval labels"
+    },
+    {
+      "track": "peaks_Injury",
+      "genome_records": 31894,
+      "locus_records": 38,
+      "rejected_coordinates": 2,
+      "reported_test": "original authors peak calls",
+      "new_test": "none; reuse of submitted interval labels"
+    },
+    {
+      "track": "peaks_Sham",
+      "genome_records": 28114,
+      "locus_records": 83,
+      "rejected_coordinates": 6,
+      "reported_test": "original authors peak calls",
+      "new_test": "none; reuse of submitted interval labels"
+    }
+  ]
+}

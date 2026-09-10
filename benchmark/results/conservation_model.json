@@ -1,0 +1,22 @@
+{
+  "C": 10.0,
+  "validation_AP": 0.7174607049803134,
+  "feature_names": [
+    "phastcons_mean",
+    "covered_fraction"
+  ],
+  "mean": [
+    0.15723677759721422,
+    0.9964150890241155
+  ],
+  "scale": [
+    0.167393114055428,
+    0.0553420319358448
+  ],
+  "coefficients": [
+    0.8665830081324356,
+    1.592600256330632
+  ],
+  "intercept": -0.035974659155546054,
+  "features_sha256": "0f7c6eeff25aac34ca301ee2df65da0a6d260b022848f9679e5db3e8f93dd0ed"
+}

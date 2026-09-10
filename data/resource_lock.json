@@ -1,0 +1,1122 @@
+{
+  "CNhs12073.hg19.ctss.bed.gz": {
+    "bytes": 8392823,
+    "etag": "\"801077-4a6dc84ed4200\"",
+    "publisher_md5": null,
+    "resolved_url": "https://fantom.gsc.riken.jp/5/datafiles/latest/basic/human.primary_cell.hCAGE/Schwann%2520Cells%252c%2520donor1.CNhs12073.11498-119F4.hg19.ctss.bed.gz",
+    "retrieved_at": "2026-09-10T19:28:31.470891+00:00",
+    "sha256": "d03273681418b42121cffe54a91ea5ab6a5de1c83aa8528e26f41c355d3108b0",
+    "source": "FANTOM5",
+    "url": "https://fantom.gsc.riken.jp/5/datafiles/latest/basic/human.primary_cell.hCAGE/Schwann%2520Cells%252c%2520donor1.CNhs12073.11498-119F4.hg19.ctss.bed.gz"
+  },
+  "CNhs12345.hg19.ctss.bed.gz": {
+    "bytes": 1588227,
+    "etag": "\"183c03-4a6de76cdec40\"",
+    "publisher_md5": null,
+    "resolved_url": "https://fantom.gsc.riken.jp/5/datafiles/latest/basic/human.primary_cell.hCAGE/Schwann%2520Cells%252c%2520donor2.CNhs12345.11578-120F3.hg19.ctss.bed.gz",
+    "retrieved_at": "2026-09-10T19:28:18.512716+00:00",
+    "sha256": "4e6110c90eea5e6ac8de74802bf24912a9e1edb949db7a945f50cee2ad971631",
+    "source": "FANTOM5",
+    "url": "https://fantom.gsc.riken.jp/5/datafiles/latest/basic/human.primary_cell.hCAGE/Schwann%2520Cells%252c%2520donor2.CNhs12345.11578-120F3.hg19.ctss.bed.gz"
+  },
+  "CNhs12621.hg19.ctss.bed.gz": {
+    "bytes": 10631772,
+    "etag": "\"a23a5c-4a6dcc9d46b00\"",
+    "publisher_md5": null,
+    "resolved_url": "https://fantom.gsc.riken.jp/5/datafiles/latest/basic/human.primary_cell.hCAGE/Schwann%2520Cells%252c%2520donor3.CNhs12621.11659-122F3.hg19.ctss.bed.gz",
+    "retrieved_at": "2026-09-10T19:28:35.763758+00:00",
+    "sha256": "a049013dcc3f3102b07f3703424d831a2318bf73c89dc4c2c438c3c35312050f",
+    "source": "FANTOM5",
+    "url": "https://fantom.gsc.riken.jp/5/datafiles/latest/basic/human.primary_cell.hCAGE/Schwann%2520Cells%252c%2520donor3.CNhs12621.11659-122F3.hg19.ctss.bed.gz"
+  },
+  "ENCFF005RLW.json": {
+    "bytes": 13544,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF005RLW/?format=json",
+    "retrieved_at": "2026-09-10T19:47:21.251978+00:00",
+    "sha256": "048122b6a5ce49198f08af09e3a860db63202d6fa3572283adb8d9d952cbd9e4",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF005RLW/?format=json"
+  },
+  "ENCFF005RLW.tsv": {
+    "bytes": 10849363,
+    "etag": "\"0dfc695b5d99703a26492aeccc94a72c-2\"",
+    "publisher_md5": "d40f4441472accc3d895514049f85dfb",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/07/14/25a1ec92-80fd-45ac-b510-7bc60c4104da/ENCFF005RLW.tsv",
+    "retrieved_at": "2026-09-10T19:47:28.093733+00:00",
+    "sha256": "e92a3eb85ae35e62869809dc774a05bc9c78222f71983ff51e6b070c7146ec8d",
+    "source": "ENCFF005RLW",
+    "url": "https://encode-public.s3.amazonaws.com/2020/07/14/25a1ec92-80fd-45ac-b510-7bc60c4104da/ENCFF005RLW.tsv"
+  },
+  "ENCFF029IGD.json": {
+    "bytes": 19128,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF029IGD/?format=json",
+    "retrieved_at": "2026-09-10T19:26:50.377615+00:00",
+    "sha256": "b581dba2108426042b6239439d54a25e34894b7bcad24efbbc3e52e5071fa7ca",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF029IGD/?format=json"
+  },
+  "ENCFF046AFQ.json": {
+    "bytes": 18275,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF046AFQ/?format=json",
+    "retrieved_at": "2026-09-10T19:47:27.262986+00:00",
+    "sha256": "3b11d10e8cdb964241b50874b6286a6f38bb68a5718b355b8dc8dc3ddd2424ef",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF046AFQ/?format=json"
+  },
+  "ENCFF046AFQ.tsv": {
+    "bytes": 9864233,
+    "etag": "\"8302eb08c39605709e458590946973ad-2\"",
+    "publisher_md5": "ab89783de8da56ed135c93a754c0ec47",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2016/02/17/6aa1ca2f-9cfc-4840-9b36-2735e82acd02/ENCFF046AFQ.tsv",
+    "retrieved_at": "2026-09-10T19:47:33.368460+00:00",
+    "sha256": "6010496bb46a6b918e664543320952245981922758ed2f0fe3b1f66eac0dd0f3",
+    "source": "ENCFF046AFQ",
+    "url": "https://encode-public.s3.amazonaws.com/2016/02/17/6aa1ca2f-9cfc-4840-9b36-2735e82acd02/ENCFF046AFQ.tsv"
+  },
+  "ENCFF065MQK.bed.gz": {
+    "bytes": 380718,
+    "etag": "\"0ea59b5c19b3f0010d48dfb4485210b8\"",
+    "publisher_md5": "0ea59b5c19b3f0010d48dfb4485210b8",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/11/28/e5e70b66-8698-4800-807c-979542f7365f/ENCFF065MQK.bed.gz",
+    "retrieved_at": "2026-09-10T19:47:19.714436+00:00",
+    "sha256": "683fbf5d26a8a029105fdfac0760ca746935cbdfe536eb84e9d2be24792e79fd",
+    "source": "ENCFF065MQK",
+    "url": "https://encode-public.s3.amazonaws.com/2020/11/28/e5e70b66-8698-4800-807c-979542f7365f/ENCFF065MQK.bed.gz"
+  },
+  "ENCFF065MQK.json": {
+    "bytes": 25422,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF065MQK/?format=json",
+    "retrieved_at": "2026-09-10T19:47:19.197963+00:00",
+    "sha256": "e00320783efe90fe3eea05e9a996e25e18e6843964316a60b595ee8c0b915cce",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF065MQK/?format=json"
+  },
+  "ENCFF095QHF.bed.gz": {
+    "bytes": 160933,
+    "etag": "\"974716c7d8716216baa0fc4b9a4bfaa3\"",
+    "publisher_md5": "974716c7d8716216baa0fc4b9a4bfaa3",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2025/08/14/203fa685-1b60-406e-953e-efce2d0a1cee/ENCFF095QHF.bed.gz",
+    "retrieved_at": "2026-09-10T19:53:53.673125+00:00",
+    "sha256": "8695f6f4febe7199ec9e4fd5e3020b7619c775132b2985e9caa82dbe9714a86b",
+    "source": "ENCFF095QHF",
+    "url": "https://encode-public.s3.amazonaws.com/2025/08/14/203fa685-1b60-406e-953e-efce2d0a1cee/ENCFF095QHF.bed.gz"
+  },
+  "ENCFF095QHF.json": {
+    "bytes": 10788,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF095QHF/?format=json",
+    "retrieved_at": "2026-09-10T19:53:53.223322+00:00",
+    "sha256": "7cf7fd6f9ded0602be25698cef33d93665f5d155dffa236bb74d2ffd2be28c0e",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF095QHF/?format=json"
+  },
+  "ENCFF197RQL.json": {
+    "bytes": 13544,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF197RQL/?format=json",
+    "retrieved_at": "2026-09-10T19:47:22.729106+00:00",
+    "sha256": "2362f478ad1f2b54fab3903532daf51578114482e901a626afb8a2f74a159269",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF197RQL/?format=json"
+  },
+  "ENCFF197RQL.tsv": {
+    "bytes": 10839616,
+    "etag": "\"c77e5d17aba7e715710ca7fd0635298a-2\"",
+    "publisher_md5": "222b8076a30704e44d0c16586041ea46",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/07/14/b58e9861-e5af-4ef1-a192-08fc92216e5d/ENCFF197RQL.tsv",
+    "retrieved_at": "2026-09-10T19:47:29.244773+00:00",
+    "sha256": "1059e2329e96036c14066715d80b949b3dc214a01d45309533521400d7bb7ec1",
+    "source": "ENCFF197RQL",
+    "url": "https://encode-public.s3.amazonaws.com/2020/07/14/b58e9861-e5af-4ef1-a192-08fc92216e5d/ENCFF197RQL.tsv"
+  },
+  "ENCFF251LOF.bed.gz": {
+    "bytes": 1341340,
+    "etag": "\"0bf2ddac0629509116e5ec5a69ac862f\"",
+    "publisher_md5": "0bf2ddac0629509116e5ec5a69ac862f",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2017/03/21/f0774657-e3ab-465b-8b31-1bf917d24ae0/ENCFF251LOF.bed.gz",
+    "retrieved_at": "2026-09-10T19:47:20.815265+00:00",
+    "sha256": "d3912eb30e091e8f13b4c0980605e6053291552244934d13466aba9e0f82c5b8",
+    "source": "ENCFF251LOF",
+    "url": "https://encode-public.s3.amazonaws.com/2017/03/21/f0774657-e3ab-465b-8b31-1bf917d24ae0/ENCFF251LOF.bed.gz"
+  },
+  "ENCFF251LOF.json": {
+    "bytes": 16051,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF251LOF/?format=json",
+    "retrieved_at": "2026-09-10T19:47:19.733385+00:00",
+    "sha256": "c9fba71fc4c51100eebed04927e23291c02d3d1f0446d7acea573df953633fd5",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF251LOF/?format=json"
+  },
+  "ENCFF251PBC.json": {
+    "bytes": 14486,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF251PBC/?format=json",
+    "retrieved_at": "2026-09-10T19:56:26.041119+00:00",
+    "sha256": "6f0b3ec2fa001960f5021e6e637354567f7bbb888baf5d556e14d4e5187ed763",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF251PBC/?format=json"
+  },
+  "ENCFF278HNC.bed.gz": {
+    "bytes": 455910759,
+    "etag": "\"0b91a02ba4102401e642f83bfa864f31-55\"",
+    "publisher_md5": "9d159c307c34d23edbcd0b75d42940c7",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2018/05/06/4b16d659-aca2-4ed0-b71f-0a8a6a8be150/ENCFF278HNC.bed.gz",
+    "retrieved_at": "2026-09-10T19:51:45.244711+00:00",
+    "sha256": "38b01cf2a89b9ab412808548ce9be18778fda84c06a228cb4f94a0aedc335c27",
+    "source": "ENCFF278HNC",
+    "url": "https://encode-public.s3.amazonaws.com/2018/05/06/4b16d659-aca2-4ed0-b71f-0a8a6a8be150/ENCFF278HNC.bed.gz"
+  },
+  "ENCFF278HNC.json": {
+    "bytes": 27637,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF278HNC/?format=json",
+    "retrieved_at": "2026-09-10T19:47:17.189391+00:00",
+    "sha256": "84173b9783c27a00ba9ea9dcc918e840685f0b30881b0e8a9bead8004dd87545",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF278HNC/?format=json"
+  },
+  "ENCFF346AYA.bigBed": {
+    "bytes": 2106180,
+    "etag": "\"b8c41d3e732ffe8d6fb7d4d3b001152c\"",
+    "publisher_md5": "b8c41d3e732ffe8d6fb7d4d3b001152c",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/12/03/e600e8d6-aee2-47e7-8085-6c48234fc680/ENCFF346AYA.bigBed",
+    "retrieved_at": "2026-09-10T19:47:18.765049+00:00",
+    "sha256": "2a9c2cc78cee2aa975e0e7ee82497833f6a6fe2fd25139a226ff0a2d8d35d5fe",
+    "source": "ENCFF346AYA",
+    "url": "https://encode-public.s3.amazonaws.com/2020/12/03/e600e8d6-aee2-47e7-8085-6c48234fc680/ENCFF346AYA.bigBed"
+  },
+  "ENCFF346AYA.json": {
+    "bytes": 15434,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF346AYA/?format=json",
+    "retrieved_at": "2026-09-10T19:47:17.090195+00:00",
+    "sha256": "e28965720b3e416283ad62d631a28da9ee0bb697e44c27643986db9931221b3b",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF346AYA/?format=json"
+  },
+  "ENCFF398VOV.json": {
+    "bytes": 13546,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF398VOV/?format=json",
+    "retrieved_at": "2026-09-10T19:47:20.142027+00:00",
+    "sha256": "75570bfccde9e2cd5065750c414a3e9adb2582aaae05d98aa00810ec799ffb52",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF398VOV/?format=json"
+  },
+  "ENCFF398VOV.tsv": {
+    "bytes": 10867746,
+    "etag": "\"f7e6a2e159542c4c692fe2934caf8ba7-2\"",
+    "publisher_md5": "75b24db0d2eb593b45db2bb293ec54d1",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/07/14/544e6e15-12be-4863-8186-ee4a4b678ecc/ENCFF398VOV.tsv",
+    "retrieved_at": "2026-09-10T19:47:26.822281+00:00",
+    "sha256": "b8e3b172d7ef896ae223a077f887b921391731611eece2732cab514e369740ed",
+    "source": "ENCFF398VOV",
+    "url": "https://encode-public.s3.amazonaws.com/2020/07/14/544e6e15-12be-4863-8186-ee4a4b678ecc/ENCFF398VOV.tsv"
+  },
+  "ENCFF414RAQ.json": {
+    "bytes": 14804,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF414RAQ/?format=json",
+    "retrieved_at": "2026-09-10T19:56:25.533307+00:00",
+    "sha256": "c0710801f898bd923817fc14832f3f8c126642483605d9bf6f88a3b1977f2db1",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF414RAQ/?format=json"
+  },
+  "ENCFF425MZT.bed.gz": {
+    "bytes": 886594,
+    "etag": "\"16a76dfefdb64f9f1f47bdd0dd50df8d\"",
+    "publisher_md5": "16a76dfefdb64f9f1f47bdd0dd50df8d",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/10/28/7808b666-b7de-4fae-ada5-d36d1b49661b/ENCFF425MZT.bed.gz",
+    "retrieved_at": "2026-09-10T19:53:54.732889+00:00",
+    "sha256": "b041bb98fd87e865fd154b90bf04583fcb89ed70dd9a631dee063acbb767543a",
+    "source": "ENCFF425MZT",
+    "url": "https://encode-public.s3.amazonaws.com/2020/10/28/7808b666-b7de-4fae-ada5-d36d1b49661b/ENCFF425MZT.bed.gz"
+  },
+  "ENCFF425MZT.json": {
+    "bytes": 16975,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF425MZT/?format=json",
+    "retrieved_at": "2026-09-10T19:53:53.885920+00:00",
+    "sha256": "3a4a32e7d6953380469ec8e114b7c060fefbdd3e30e867ba968bb9df99bdc94a",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF425MZT/?format=json"
+  },
+  "ENCFF439MKP.json": {
+    "bytes": 13959,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF439MKP/?format=json",
+    "retrieved_at": "2026-09-10T19:56:26.230769+00:00",
+    "sha256": "4528fc93999e55ad4f8e7e10836f50b0420d2833b0a9145c11969da9bf35a94e",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF439MKP/?format=json"
+  },
+  "ENCFF474ZLP.bed.gz": {
+    "bytes": 1274264,
+    "etag": "\"7f2211709aefe01bb2f118b1bd61514d\"",
+    "publisher_md5": "7f2211709aefe01bb2f118b1bd61514d",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/12/03/24f6554c-357d-44f0-8e05-4519dfb60603/ENCFF474ZLP.bed.gz",
+    "retrieved_at": "2026-09-10T19:53:54.306095+00:00",
+    "sha256": "3a3610a8ffe8c8ac45eec370c4dc2e7c18febf0dcf6cb12edf0367e0d4502771",
+    "source": "ENCFF474ZLP",
+    "url": "https://encode-public.s3.amazonaws.com/2020/12/03/24f6554c-357d-44f0-8e05-4519dfb60603/ENCFF474ZLP.bed.gz"
+  },
+  "ENCFF474ZLP.json": {
+    "bytes": 23250,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF474ZLP/?format=json",
+    "retrieved_at": "2026-09-10T19:53:53.213677+00:00",
+    "sha256": "2e2db45a85340c089404e09ee9b75f2ffdd478f51aba77eb9706678f2037c45c",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF474ZLP/?format=json"
+  },
+  "ENCFF477JAK.bigBed": {
+    "bytes": 1339123,
+    "etag": "\"fad394dcc462e32dee3d88572df269b7\"",
+    "publisher_md5": "fad394dcc462e32dee3d88572df269b7",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/09/01/6f46c393-603b-4c23-b54f-5bd4734ef751/ENCFF477JAK.bigBed",
+    "retrieved_at": "2026-09-10T19:47:19.283125+00:00",
+    "sha256": "d3fb52ae0539b3e486bf73749a46905f6bf258e3ebe0c8ef26c20ae41dd55e52",
+    "source": "ENCFF477JAK",
+    "url": "https://encode-public.s3.amazonaws.com/2020/09/01/6f46c393-603b-4c23-b54f-5bd4734ef751/ENCFF477JAK.bigBed"
+  },
+  "ENCFF477JAK.json": {
+    "bytes": 19618,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF477JAK/?format=json",
+    "retrieved_at": "2026-09-10T19:47:17.150207+00:00",
+    "sha256": "a404b32ce2a3167a325fab4546b1eca23618ed00dacdcb0757237a09fd309928",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF477JAK/?format=json"
+  },
+  "ENCFF495AYZ.json": {
+    "bytes": 13546,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF495AYZ/?format=json",
+    "retrieved_at": "2026-09-10T19:53:54.542723+00:00",
+    "sha256": "7e0dd03a6106d660513cc66d185fe02c8015b333ccd1a306c184baf9515f38a0",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF495AYZ/?format=json"
+  },
+  "ENCFF495AYZ.tsv": {
+    "bytes": 10847278,
+    "etag": "\"43e419323dc9a6eb9e451a8f848bb430-2\"",
+    "publisher_md5": "b311cb1fa0ae6e0a50a67e3a069ca813",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/07/14/134c3308-55cd-4421-a838-ab6825f59146/ENCFF495AYZ.tsv",
+    "retrieved_at": "2026-09-10T19:54:00.990546+00:00",
+    "sha256": "ec1fe2a009abf1214d0dc31d15c67b45d09334403ab046fa58ce401ec31bfd05",
+    "source": "ENCFF495AYZ",
+    "url": "https://encode-public.s3.amazonaws.com/2020/07/14/134c3308-55cd-4421-a838-ab6825f59146/ENCFF495AYZ.tsv"
+  },
+  "ENCFF540FVR.json": {
+    "bytes": 19119,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF540FVR/?format=json",
+    "retrieved_at": "2026-09-10T19:26:50.375619+00:00",
+    "sha256": "2da8aec3507637e089e812d296654490b0fe81064fc73e3db0b14d9a7322b70d",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF540FVR/?format=json"
+  },
+  "ENCFF602YVR.bed.gz": {
+    "bytes": 576560,
+    "etag": "\"8a998e8f22450553cb37fc6e30cc327e\"",
+    "publisher_md5": "8a998e8f22450553cb37fc6e30cc327e",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2024/08/19/953663b2-85ae-4374-9bd7-bc1a6de0acd6/ENCFF602YVR.bed.gz",
+    "retrieved_at": "2026-09-10T19:26:53.155763+00:00",
+    "sha256": "627804fa13ce725e4ec069e1599376da957693d60813476a15e24786c8399dd0",
+    "source": "ENCFF602YVR",
+    "url": "https://encode-public.s3.amazonaws.com/2024/08/19/953663b2-85ae-4374-9bd7-bc1a6de0acd6/ENCFF602YVR.bed.gz"
+  },
+  "ENCFF602YVR.json": {
+    "bytes": 14836,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF602YVR/?format=json",
+    "retrieved_at": "2026-09-10T19:26:51.606530+00:00",
+    "sha256": "803e9417672ce8bc72e3bb7909e1b6f54392108339f9e7a19a1ad0b32fb218e1",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF602YVR/?format=json"
+  },
+  "ENCFF632FMT.bed.gz": {
+    "bytes": 1381602,
+    "etag": "\"6f972e8229099addfae9cb684cbd80d8\"",
+    "publisher_md5": "6f972e8229099addfae9cb684cbd80d8",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2024/08/19/724edc60-94fa-4a46-a3ce-ef097a8129d2/ENCFF632FMT.bed.gz",
+    "retrieved_at": "2026-09-10T19:26:53.574411+00:00",
+    "sha256": "47686613c6f12c15dfee435c590b3ee6cdc2f07c6dc18dc0664508ac18a4aacd",
+    "source": "ENCFF632FMT",
+    "url": "https://encode-public.s3.amazonaws.com/2024/08/19/724edc60-94fa-4a46-a3ce-ef097a8129d2/ENCFF632FMT.bed.gz"
+  },
+  "ENCFF632FMT.json": {
+    "bytes": 14518,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF632FMT/?format=json",
+    "retrieved_at": "2026-09-10T19:26:51.555531+00:00",
+    "sha256": "f5ddc2f94b04d61a646d8c7a8e28dfadb75b98351efa84bb3a407ad28eeba5b4",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF632FMT/?format=json"
+  },
+  "ENCFF671DNU.bed.gz": {
+    "bytes": 535607,
+    "etag": "\"d2b01b3448dd94a0cb84b12a1818412a\"",
+    "publisher_md5": "d2b01b3448dd94a0cb84b12a1818412a",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/10/30/fe09a9b4-33ea-414c-a41e-9a30c09dde9f/ENCFF671DNU.bed.gz",
+    "retrieved_at": "2026-09-10T19:53:54.714005+00:00",
+    "sha256": "12809be05114bdda3ad7b3d8db5968b37ed0e8ff91e468b6ceece640872f36fe",
+    "source": "ENCFF671DNU",
+    "url": "https://encode-public.s3.amazonaws.com/2020/10/30/fe09a9b4-33ea-414c-a41e-9a30c09dde9f/ENCFF671DNU.bed.gz"
+  },
+  "ENCFF671DNU.json": {
+    "bytes": 16365,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF671DNU/?format=json",
+    "retrieved_at": "2026-09-10T19:53:54.123034+00:00",
+    "sha256": "d789dadbb480d650802c533ee42d81d1e60903e855a154dfd5fc77996230c4d6",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF671DNU/?format=json"
+  },
+  "ENCFF703WKZ.bed.gz": {
+    "bytes": 2323999,
+    "etag": "\"1118761f45facbc93ca2834a37fc5ef1\"",
+    "publisher_md5": "1118761f45facbc93ca2834a37fc5ef1",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/09/17/5d61b9a9-1605-4d3b-a0e8-f5557cbdd3ab/ENCFF703WKZ.bed.gz",
+    "retrieved_at": "2026-09-10T19:53:54.903028+00:00",
+    "sha256": "62227fdde720ef3434ee128d8e4d4aba30997394789f4201bd8af4346b637ca2",
+    "source": "ENCFF703WKZ",
+    "url": "https://encode-public.s3.amazonaws.com/2020/09/17/5d61b9a9-1605-4d3b-a0e8-f5557cbdd3ab/ENCFF703WKZ.bed.gz"
+  },
+  "ENCFF703WKZ.json": {
+    "bytes": 16367,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF703WKZ/?format=json",
+    "retrieved_at": "2026-09-10T19:53:53.214896+00:00",
+    "sha256": "29bc7b7803d04f91a403aaa54469cd7030bbb9ad5c525b91dba6f54950dc2359",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF703WKZ/?format=json"
+  },
+  "ENCFF762LWQ.bed.gz": {
+    "bytes": 3902832,
+    "etag": "\"050a007bf29c5b72023f4a68f45497e6\"",
+    "publisher_md5": "050a007bf29c5b72023f4a68f45497e6",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2017/03/21/6256b6e1-f5d3-4ea6-a4ea-8ff92bf2653f/ENCFF762LWQ.bed.gz",
+    "retrieved_at": "2026-09-10T19:47:22.276735+00:00",
+    "sha256": "c2d1d939169e3ef7cefea0a46e0b3858dcf9c1c3e0df81b1f02f24361b7f46c0",
+    "source": "ENCFF762LWQ",
+    "url": "https://encode-public.s3.amazonaws.com/2017/03/21/6256b6e1-f5d3-4ea6-a4ea-8ff92bf2653f/ENCFF762LWQ.bed.gz"
+  },
+  "ENCFF762LWQ.json": {
+    "bytes": 16655,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF762LWQ/?format=json",
+    "retrieved_at": "2026-09-10T19:47:19.688107+00:00",
+    "sha256": "12ca0c3ea58938aff7ded22c7fa60f972e814f6d330c4e29c82f9402d1dbf237",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF762LWQ/?format=json"
+  },
+  "ENCFF786UMK.bed.gz": {
+    "bytes": 2940314,
+    "etag": "\"df9ec5f5cfe6f60a5e51eed3f1cb8938\"",
+    "publisher_md5": "df9ec5f5cfe6f60a5e51eed3f1cb8938",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2017/03/21/ad53feba-b0f8-4a90-a7af-6e988dd87380/ENCFF786UMK.bed.gz",
+    "retrieved_at": "2026-09-10T19:47:19.224407+00:00",
+    "sha256": "7cb0e42c3c2af85a640974168dd06fec75f9e4e758f056a94cdc2e3ad2285bda",
+    "source": "ENCFF786UMK",
+    "url": "https://encode-public.s3.amazonaws.com/2017/03/21/ad53feba-b0f8-4a90-a7af-6e988dd87380/ENCFF786UMK.bed.gz"
+  },
+  "ENCFF786UMK.json": {
+    "bytes": 16050,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF786UMK/?format=json",
+    "retrieved_at": "2026-09-10T19:47:17.184231+00:00",
+    "sha256": "6cb3016225636422058eb3e3b55d02c5bafcbba175dfeb2d21ab8917b5e4509d",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF786UMK/?format=json"
+  },
+  "ENCFF831KJJ.bed.gz": {
+    "bytes": 630750,
+    "etag": "\"7eaeaa263def645be84f3a2b40702cbb\"",
+    "publisher_md5": "7eaeaa263def645be84f3a2b40702cbb",
+    "resolved_url": "https://encode-public.s3.amazonaws.com/2020/09/01/177000ec-53a0-4691-9ac7-58e1457396c4/ENCFF831KJJ.bed.gz",
+    "retrieved_at": "2026-09-10T19:53:53.928467+00:00",
+    "sha256": "84f9529d50dda607a8ced1d46f3ac87df10f3438dffe2c3893273970cc37c408",
+    "source": "ENCFF831KJJ",
+    "url": "https://encode-public.s3.amazonaws.com/2020/09/01/177000ec-53a0-4691-9ac7-58e1457396c4/ENCFF831KJJ.bed.gz"
+  },
+  "ENCFF831KJJ.json": {
+    "bytes": 25385,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/files/ENCFF831KJJ/?format=json",
+    "retrieved_at": "2026-09-10T19:53:53.218371+00:00",
+    "sha256": "8bb1bea755514201adff89da568274bfc8e273af7fef19f819011181327ad4ae",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/files/ENCFF831KJJ/?format=json"
+  },
+  "ENCSR154GUK.json": {
+    "bytes": 272317,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR154GUK/?format=json",
+    "retrieved_at": "2026-09-10T19:47:19.000752+00:00",
+    "sha256": "86f0a504f4ac0ed36afb2d4b0461025d661bea0dd2f333098ca070a8f4830e9b",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR154GUK/?format=json"
+  },
+  "ENCSR157ZVP.json": {
+    "bytes": 263459,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR157ZVP/?format=json",
+    "retrieved_at": "2026-09-10T19:47:19.497053+00:00",
+    "sha256": "286914060122afd68616d804e69ea31d691525cb2a28aafb5b204ec57e9961fb",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR157ZVP/?format=json"
+  },
+  "ENCSR205TUH.json": {
+    "bytes": 83915,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR205TUH/?format=json",
+    "retrieved_at": "2026-09-10T19:26:50.406613+00:00",
+    "sha256": "8f4436ea04ffc6b0d7fd09dfdd32b1e8c0eb066ec69abc9a598d331878d2968b",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR205TUH/?format=json"
+  },
+  "ENCSR221DFU.json": {
+    "bytes": 136727,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/annotations/ENCSR221DFU/?format=json",
+    "retrieved_at": "2026-09-10T19:56:25.856005+00:00",
+    "sha256": "110301784002a4bcd0eaee35b09519fdf68c694580cc9b6422f65f6d3796602c",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR221DFU/?format=json"
+  },
+  "ENCSR272UNO.json": {
+    "bytes": 265884,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR272UNO/?format=json",
+    "retrieved_at": "2026-09-10T19:47:19.967986+00:00",
+    "sha256": "c7754c31b4cb617d3d94ae285144126818877f9570a08bf005c3d6678e66ff52",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR272UNO/?format=json"
+  },
+  "ENCSR301DUJ.json": {
+    "bytes": 137275,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/annotations/ENCSR301DUJ/?format=json",
+    "retrieved_at": "2026-09-10T19:26:50.519616+00:00",
+    "sha256": "b4424c30cdbb06919aa356c740917c7ee7b3e311f766ec64c2ff1676c36cc97f",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR301DUJ/?format=json"
+  },
+  "ENCSR401ESD.json": {
+    "bytes": 506884,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR401ESD/?format=json",
+    "retrieved_at": "2026-09-10T19:47:16.959022+00:00",
+    "sha256": "98831e167e5d26825a1cafce16485f44bdb8702f9b4e9c6ebd4118bc1e7d5d2a",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR401ESD/?format=json"
+  },
+  "ENCSR469POZ.json": {
+    "bytes": 273258,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR469POZ/?format=json",
+    "retrieved_at": "2026-09-10T19:47:16.925137+00:00",
+    "sha256": "e30127a98e8bdfa4ef363f2725a4bd6517a9e4e4cc37260bbf9c3782160a5b6d",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR469POZ/?format=json"
+  },
+  "ENCSR479GPU.json": {
+    "bytes": 262506,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR479GPU/?format=json",
+    "retrieved_at": "2026-09-10T19:47:19.531819+00:00",
+    "sha256": "bd9fade62a531ad3f1760a24f412b30925a189db3f8ba4dc14c16c457256537d",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR479GPU/?format=json"
+  },
+  "ENCSR580XUK.json": {
+    "bytes": 294327,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR580XUK/?format=json",
+    "retrieved_at": "2026-09-10T19:47:16.891969+00:00",
+    "sha256": "45dfa15aa3f0cdbaeeb6b8de53a742602df3e50cfe59a67d88b28648d769b512",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR580XUK/?format=json"
+  },
+  "ENCSR648OSR.json": {
+    "bytes": 262417,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR648OSR/?format=json",
+    "retrieved_at": "2026-09-10T19:47:21.068437+00:00",
+    "sha256": "49eca7e1ced4d89f1cd31e4a77422f33de28b8e9a2b243da11c3fbca6c2f8cf5",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR648OSR/?format=json"
+  },
+  "ENCSR726QTF.json": {
+    "bytes": 97263,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR726QTF/?format=json",
+    "retrieved_at": "2026-09-10T19:26:50.417613+00:00",
+    "sha256": "15911cf99dbbdce5e1b579aa47370bc8d98c2a36f1837f01bb2c7bc278eb57de",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR726QTF/?format=json"
+  },
+  "ENCSR771YJT.json": {
+    "bytes": 271401,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR771YJT/?format=json",
+    "retrieved_at": "2026-09-10T19:47:16.925211+00:00",
+    "sha256": "4bf9b5d1c5d8ca267b9fc814ea429d7216d3b2eafa9278df8916c5e02e2c6ff5",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR771YJT/?format=json"
+  },
+  "ENCSR796HLX.json": {
+    "bytes": 266937,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR796HLX/?format=json",
+    "retrieved_at": "2026-09-10T19:47:22.535289+00:00",
+    "sha256": "3dc715bff9735c57ed97517bfda096d5d6b57428d49911954effcd8074cf43c0",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR796HLX/?format=json"
+  },
+  "ENCSR858QEL.json": {
+    "bytes": 267031,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.encodeproject.org/experiments/ENCSR858QEL/?format=json",
+    "retrieved_at": "2026-09-10T19:47:27.073874+00:00",
+    "sha256": "fbec492d286a8abbe7ff560b9dab6118a5d0e2cee3503962f488a2e11a5b000e",
+    "source": "ENCODE",
+    "url": "https://www.encodeproject.org/experiments/ENCSR858QEL/?format=json"
+  },
+  "GSE63103.soft": {
+    "bytes": 2979,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63103&targ=self&form=text&view=full",
+    "retrieved_at": "2026-09-10T19:30:26.721660+00:00",
+    "sha256": "4183c145ef4c7793cf095c9dfd3a109fac42c08b0f2193306d56e5e30ff189ea",
+    "source": "www.ncbi.nlm.nih.gov",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63103&targ=self&form=text&view=full"
+  },
+  "GSE63103_H3K27ac_InjuryDB_peaks.bed.gz": {
+    "bytes": 47795,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/suppl/GSE63103_H3K27ac_InjuryDB_peaks.bed.gz",
+    "retrieved_at": "2026-09-10T19:32:55.352315+00:00",
+    "sha256": "9b034cdd39733697c6126da31faa200b93bd9d801d758574969ba8cb16a4374f",
+    "source": "ftp.ncbi.nlm.nih.gov",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/suppl/GSE63103_H3K27ac_InjuryDB_peaks.bed.gz"
+  },
+  "GSE63103_H3K27ac_ShamDB_peaks.bed.gz": {
+    "bytes": 37234,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/suppl/GSE63103_H3K27ac_ShamDB_peaks.bed.gz",
+    "retrieved_at": "2026-09-10T19:32:55.346748+00:00",
+    "sha256": "d36fbacddf8f767ae23fc4c0787718f07eef0d3b21af572d39f9b67d4b3b954e",
+    "source": "ftp.ncbi.nlm.nih.gov",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/suppl/GSE63103_H3K27ac_ShamDB_peaks.bed.gz"
+  },
+  "GSE63103_H3K27ac_peaks_Injury.bed.gz": {
+    "bytes": 347309,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/suppl/GSE63103_H3K27ac_peaks_Injury.bed.gz",
+    "retrieved_at": "2026-09-10T19:32:55.715616+00:00",
+    "sha256": "e62b2d60ba982550ecfa90b479bca683b49440c413d7f4c40c1708d6d7789069",
+    "source": "ftp.ncbi.nlm.nih.gov",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/suppl/GSE63103_H3K27ac_peaks_Injury.bed.gz"
+  },
+  "GSE63103_H3K27ac_peaks_Sham.bed.gz": {
+    "bytes": 309232,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/suppl/GSE63103_H3K27ac_peaks_Sham.bed.gz",
+    "retrieved_at": "2026-09-10T19:32:55.653624+00:00",
+    "sha256": "255be52fc7f86c64617786c2c43ef398ed8cb1b4b49ffe8d881c0ad169885bf8",
+    "source": "ftp.ncbi.nlm.nih.gov",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/suppl/GSE63103_H3K27ac_peaks_Sham.bed.gz"
+  },
+  "GSE63103_family.soft.gz": {
+    "bytes": 3344,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/soft/GSE63103_family.soft.gz",
+    "retrieved_at": "2026-09-10T19:32:55.230431+00:00",
+    "sha256": "d0188e404890ee023f31a93edb6af7bfc38b23b07184b4e10e9d86154c433adb",
+    "source": "ftp.ncbi.nlm.nih.gov",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/soft/GSE63103_family.soft.gz"
+  },
+  "GSE63103_index.html": {
+    "bytes": 1196,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/suppl/",
+    "retrieved_at": "2026-09-10T19:30:26.662283+00:00",
+    "sha256": "8090f5bd2aa1fb3ecc8934339afff7ba4598114ccda5bd15ce0c54bf00f71cb2",
+    "source": "ftp.ncbi.nlm.nih.gov",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63103/suppl/"
+  },
+  "MA0090.4.json": {
+    "bytes": 910,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://jaspar.elixir.no/api/v1/matrix/MA0090.4/?format=json",
+    "retrieved_at": "2026-09-10T19:31:09.753276+00:00",
+    "sha256": "222fbcfabe0676a31e5be29fe89328b0169f697179acc1a22ecd7d26e98a47e3",
+    "source": "jaspar.elixir.no",
+    "url": "https://jaspar.elixir.no/api/v1/matrix/MA0090.4/?format=json"
+  },
+  "MA0442.3.json": {
+    "bytes": 809,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://jaspar.elixir.no/api/v1/matrix/MA0442.3/?format=json",
+    "retrieved_at": "2026-09-10T19:31:09.750601+00:00",
+    "sha256": "476015a39214d4137e605d8ea17ac759db322d11afb4dd23cdea5deee0075f88",
+    "source": "jaspar.elixir.no",
+    "url": "https://jaspar.elixir.no/api/v1/matrix/MA0442.3/?format=json"
+  },
+  "MA0472.2.json": {
+    "bytes": 1106,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://jaspar.elixir.no/api/v1/matrix/MA0472.2/?format=json",
+    "retrieved_at": "2026-09-10T19:31:09.684258+00:00",
+    "sha256": "10845ef8bdbe63d0ca11eb352109a453adfc01e4927d367897466559c755a740",
+    "source": "jaspar.elixir.no",
+    "url": "https://jaspar.elixir.no/api/v1/matrix/MA0472.2/?format=json"
+  },
+  "PMC10684506.pdf": {
+    "bytes": 7283241,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC10684506",
+    "retrieved_at": "2026-09-10T19:33:06.119052+00:00",
+    "sha256": "25cc7ee8a4570a47477d26470127ffeaa8853d095cec525a10a8e60c979975e1",
+    "source": "europepmc.org",
+    "url": "https://europepmc.org/articles/PMC10684506?pdf=render"
+  },
+  "PMC3100536.pdf": {
+    "bytes": 484786,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC3100536",
+    "retrieved_at": "2026-09-10T19:32:57.735335+00:00",
+    "sha256": "ae110d41af5c83797998ddfe68273a4fa9ce0fbed7ac6395a43f9441e7faee4a",
+    "source": "europepmc.org",
+    "url": "https://europepmc.org/articles/PMC3100536?pdf=render"
+  },
+  "PMC3298281.pdf": {
+    "bytes": 432768,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC3298281",
+    "retrieved_at": "2026-09-10T19:32:58.214333+00:00",
+    "sha256": "b61baeae3b138081002c7236af9e84d0fbd951bdba45fd0a48083d06659e4498",
+    "source": "europepmc.org",
+    "url": "https://europepmc.org/articles/PMC3298281?pdf=render"
+  },
+  "PMC4358118.pdf": {
+    "bytes": 903577,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC4358118",
+    "retrieved_at": "2026-09-10T19:32:58.500330+00:00",
+    "sha256": "ac51e188bf9ad7a12207e32f4fda973977fd71282362de985d87a6e38b75d85e",
+    "source": "europepmc.org",
+    "url": "https://europepmc.org/articles/PMC4358118?pdf=render"
+  },
+  "PMC6077802.pdf": {
+    "bytes": 832232,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC6077802",
+    "retrieved_at": "2026-09-10T19:32:58.234331+00:00",
+    "sha256": "363d9513c6ae0248bd458c7e290fd44fbec488b00729bd14ff5dad4f6af46167",
+    "source": "europepmc.org",
+    "url": "https://europepmc.org/articles/PMC6077802?pdf=render"
+  },
+  "PMC7322568.pdf": {
+    "bytes": 1233200,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC7322568",
+    "retrieved_at": "2026-09-10T19:32:59.152875+00:00",
+    "sha256": "572d39a17e6a65bcbb1876b661150d33252a7cf86392e4791f0c18adf138d2a2",
+    "source": "europepmc.org",
+    "url": "https://europepmc.org/articles/PMC7322568?pdf=render"
+  },
+  "PMC9410756.pdf": {
+    "bytes": 2356491,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://europepmc.org/api/getPdf?pmcid=PMC9410756",
+    "retrieved_at": "2026-09-10T19:33:02.026401+00:00",
+    "sha256": "01fae4e189dd816a2228d380e51c668b4c74c38c9aace85f45e2e5af84839d97",
+    "source": "europepmc.org",
+    "url": "https://europepmc.org/articles/PMC9410756?pdf=render"
+  },
+  "SRP049618_read_runs.tsv": {
+    "bytes": 677,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRP049618&result=read_run&fields=run_accession,experiment_accession,sample_accession,library_layout,read_count,base_count,fastq_bytes&format=tsv",
+    "retrieved_at": "2026-09-10T20:02:28.227306+00:00",
+    "sha256": "34204d85b9a8fa00464548b29e60c02dbc7bfeadd7f572878425ec15262f9241",
+    "source": "ENA public run metadata",
+    "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRP049618&result=read_run&fields=run_accession,experiment_accession,sample_accession,library_layout,read_count,base_count,fastq_bytes&format=tsv"
+  },
+  "SRP051729_read_runs.tsv": {
+    "bytes": 746,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRP051729&result=read_run&fields=run_accession,experiment_accession,sample_accession,library_layout,read_count,base_count,fastq_bytes&format=tsv",
+    "retrieved_at": "2026-09-10T20:02:12.842057+00:00",
+    "sha256": "ee9eaeaeea2e79da605cfd88f0be8e77673a8980999939d3814b93eb8765edbe",
+    "source": "ENA public run metadata",
+    "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRP051729&result=read_run&fields=run_accession,experiment_accession,sample_accession,library_layout,read_count,base_count,fastq_bytes&format=tsv"
+  },
+  "SRP052233_read_runs.tsv": {
+    "bytes": 247,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRP052233&result=read_run&fields=run_accession,experiment_accession,sample_accession,library_layout,read_count,base_count,fastq_bytes&format=tsv",
+    "retrieved_at": "2026-09-10T20:02:13.502441+00:00",
+    "sha256": "4fd65599e55f2b11539714f6d3414b1ee75fca3bb4c045eb68b3c8b34073faa3",
+    "source": "ENA public run metadata",
+    "url": "https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRP052233&result=read_run&fields=run_accession,experiment_accession,sample_accession,library_layout,read_count,base_count,fastq_bytes&format=tsv"
+  },
+  "borzoi_README.md": {
+    "bytes": 11352,
+    "etag": "W/\"b9a362b8144f58dd819acee9a13d319cb0a44056b01a448eaa34cdb07f6bdc86\"",
+    "publisher_md5": null,
+    "resolved_url": "https://raw.githubusercontent.com/calico/borzoi/main/README.md",
+    "retrieved_at": "2026-09-10T19:27:13.609536+00:00",
+    "sha256": "03af1a2eb1435e8d6e874158a0b0532c92b4d2b1940da7ae9f020a1181e70286",
+    "source": "raw.githubusercontent.com",
+    "url": "https://raw.githubusercontent.com/calico/borzoi/main/README.md"
+  },
+  "borzoi_commit.json": {
+    "bytes": 282003,
+    "etag": "W/\"f5cb34159578018daaaa7e3072d8e7315a0fac9ff596619dc3979036e151c4a5\"",
+    "publisher_md5": null,
+    "resolved_url": "https://api.github.com/repos/calico/borzoi/commits/main",
+    "retrieved_at": "2026-09-10T19:27:14.692482+00:00",
+    "sha256": "736330e8b40ff7aa9867dab2b135db57ace930efc185a60d097fcd582e29c885",
+    "source": "api.github.com",
+    "url": "https://api.github.com/repos/calico/borzoi/commits/main"
+  },
+  "borzoi_sequences_human.bed.gz": {
+    "bytes": 578904,
+    "etag": "W/\"c1deb1a32d13417c51c32dca2b1c06476c7e6bcdf83904aed6512508fd9d78b5\"",
+    "publisher_md5": null,
+    "resolved_url": "https://raw.githubusercontent.com/calico/borzoi/main/data/sequences_human.bed.gz",
+    "retrieved_at": "2026-09-10T19:28:15.665021+00:00",
+    "sha256": "13724966c9378c2fd024c62e6bb72b94850e12d96d23a419f60040ae50b98ba3",
+    "source": "raw.githubusercontent.com",
+    "url": "https://raw.githubusercontent.com/calico/borzoi/main/data/sequences_human.bed.gz"
+  },
+  "borzoi_targets_human.txt": {
+    "bytes": 1215560,
+    "etag": "W/\"1e16d51088c47e324bd9ca63ffa04ee17c27f65dd71e605315a87246032dcd97\"",
+    "publisher_md5": null,
+    "resolved_url": "https://raw.githubusercontent.com/calico/borzoi/main/examples/targets_human.txt",
+    "retrieved_at": "2026-09-10T19:27:12.869016+00:00",
+    "sha256": "cb0c1d4baf514f44de458364b2ae0b85f722a80b72cbe66c56bd700faa481785",
+    "source": "raw.githubusercontent.com",
+    "url": "https://raw.githubusercontent.com/calico/borzoi/main/examples/targets_human.txt"
+  },
+  "chr1.phastCons100way.wigFix.gz": {
+    "bytes": 205777451,
+    "etag": "\"c43ea2b-51593b44eeb40\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/chr1.phastCons100way.wigFix.gz",
+    "retrieved_at": "2026-09-10T19:49:28.532550+00:00",
+    "sha256": "ba9b653dc1ab06340c80b5c0265aa42f7ff9a2e4b043c57b26ee759a419ea100",
+    "source": "UCSC 100-way conservation",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/chr1.phastCons100way.wigFix.gz"
+  },
+  "chr17.phastCons100way.wigFix.gz": {
+    "bytes": 70475440,
+    "etag": "\"4335eb0-51593cdf032c0\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/chr17.phastCons100way.wigFix.gz",
+    "retrieved_at": "2026-09-10T19:49:44.662845+00:00",
+    "sha256": "44a09444785c2a40dfaa55504cb375be661ed23658901b1fddef7fe8fce23a66",
+    "source": "UCSC 100-way conservation",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/chr17.phastCons100way.wigFix.gz"
+  },
+  "chr2.phastCons100way.wigFix.gz": {
+    "bytes": 214497239,
+    "etag": "\"cc8f7d7-51593da5606c0\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/chr2.phastCons100way.wigFix.gz",
+    "retrieved_at": "2026-09-10T19:49:26.689677+00:00",
+    "sha256": "c9e386bf31177fec63a0d156b82fb6a7993d869904e754c407bb1dfee9bfa671",
+    "source": "UCSC 100-way conservation",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/chr2.phastCons100way.wigFix.gz"
+  },
+  "chr22.phastCons100way.wigFix.gz": {
+    "bytes": 30986474,
+    "etag": "\"1d8d0ea-51593de451b40\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/chr22.phastCons100way.wigFix.gz",
+    "retrieved_at": "2026-09-10T19:49:37.908892+00:00",
+    "sha256": "a3292e97747ccda4583f0e04cabec27f4be4c3fcd7fce04559566c0017fbd2ad",
+    "source": "UCSC 100-way conservation",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/chr22.phastCons100way.wigFix.gz"
+  },
+  "chr3.phastCons100way.wigFix.gz": {
+    "bytes": 177506643,
+    "etag": "\"a948953-51593e4780540\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/chr3.phastCons100way.wigFix.gz",
+    "retrieved_at": "2026-09-10T19:49:19.344567+00:00",
+    "sha256": "e47a8041eb27f2b58fe8a53acd3b27fbfca84e531820f126f5e68198eddc9a47",
+    "source": "UCSC 100-way conservation",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/phastCons100way/hg38.100way.phastCons/chr3.phastCons100way.wigFix.gz"
+  },
+  "gencode50_chr1.json": {
+    "bytes": 16489469,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeBasicV50;chrom=chr1",
+    "retrieved_at": "2026-09-10T19:30:27.568493+00:00",
+    "sha256": "8b17df16e61b5d3c4d4a76903fd9647bb6f59c57a4941c4d2bdae88beee9dd25",
+    "source": "api.genome.ucsc.edu",
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeBasicV50;chrom=chr1"
+  },
+  "gencode50_chr17.json": {
+    "bytes": 8640607,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeBasicV50;chrom=chr17",
+    "retrieved_at": "2026-09-10T19:30:28.077032+00:00",
+    "sha256": "72f88fb5edf1c1e678ed5e13fc5ed2cb7e2665696be7bd531c2bf0dcb74b5034",
+    "source": "api.genome.ucsc.edu",
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeBasicV50;chrom=chr17"
+  },
+  "gencode50_chr2.json": {
+    "bytes": 12575164,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeBasicV50;chrom=chr2",
+    "retrieved_at": "2026-09-10T19:30:27.380494+00:00",
+    "sha256": "ca4967a42809b3fe8fe5530c453d565d1a08114e64acdef11d4411d5b919cc76",
+    "source": "api.genome.ucsc.edu",
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeBasicV50;chrom=chr2"
+  },
+  "gencode50_chr22.json": {
+    "bytes": 3964480,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeBasicV50;chrom=chr22",
+    "retrieved_at": "2026-09-10T19:30:28.189136+00:00",
+    "sha256": "9f7ab7673fea6ffbf6fdee03d037369fe0cf1ab010f4f26e7f595ee17167bbca",
+    "source": "api.genome.ucsc.edu",
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeBasicV50;chrom=chr22"
+  },
+  "gencode50_chr3.json": {
+    "bytes": 10614244,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeBasicV50;chrom=chr3",
+    "retrieved_at": "2026-09-10T19:30:28.123152+00:00",
+    "sha256": "43ed17f3f193dcc75ed51be2eae37222c78c752f3798822ca2d8da04bf725b15",
+    "source": "api.genome.ucsc.edu",
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeBasicV50;chrom=chr3"
+  },
+  "gencode50_locus.json": {
+    "bytes": 52671,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeCompV50;chrom=chr17;start=15000000;end=15600000",
+    "retrieved_at": "2026-09-10T19:27:10.520468+00:00",
+    "sha256": "ed3445a8e289acf8b99cb73363964f783a3a312a7680005c9f990b89072e6eb9",
+    "source": "api.genome.ucsc.edu",
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=wgEncodeGencodeCompV50;chrom=chr17;start=15000000;end=15600000"
+  },
+  "hg18ToHg38.over.chain.gz": {
+    "bytes": 343575,
+    "etag": "\"53e17-4f2cb7cbebb00\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg18/liftOver/hg18ToHg38.over.chain.gz",
+    "retrieved_at": "2026-09-10T19:26:53.239719+00:00",
+    "sha256": "5dce497acbdaee42ba03e00726bec895e69c5f22a15b7f2522e87d04d852f9aa",
+    "source": "UCSC liftOver",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg18/liftOver/hg18ToHg38.over.chain.gz"
+  },
+  "hg19ToHg38.over.chain.gz": {
+    "bytes": 227698,
+    "etag": "\"37972-4eee3590f3b80\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz",
+    "retrieved_at": "2026-09-10T19:26:53.197761+00:00",
+    "sha256": "5c0598e500ceb5a78c73086929e8ef993aec309bcafb595139b53d440b125a1d",
+    "source": "UCSC liftOver",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz"
+  },
+  "hg38-blacklist.v2.bed.gz": {
+    "bytes": 5867,
+    "etag": "W/\"13266465e0b8e37a03aa925ea0b3faed2f7d23cd451872329267600339c4dc34\"",
+    "publisher_md5": null,
+    "resolved_url": "https://raw.githubusercontent.com/Boyle-Lab/Blacklist/master/lists/hg38-blacklist.v2.bed.gz",
+    "retrieved_at": "2026-09-10T19:27:11.960164+00:00",
+    "sha256": "c92e763af17271446194991e71917ac220593a5a3d40a06667be24178ef08cf2",
+    "source": "raw.githubusercontent.com",
+    "url": "https://raw.githubusercontent.com/Boyle-Lab/Blacklist/master/lists/hg38-blacklist.v2.bed.gz"
+  },
+  "hg38.chr1.fa.gz": {
+    "bytes": 74778116,
+    "etag": "\"4750604-4f0ac97765b40\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz",
+    "retrieved_at": "2026-09-10T19:27:22.478463+00:00",
+    "sha256": "baf03990d81ed87d66a976779c2eb4d8a0e5243829ca913556d3819fe0fba696",
+    "source": "UCSC GRCh38",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz"
+  },
+  "hg38.chr17.fa.gz": {
+    "bytes": 25930986,
+    "etag": "\"18bacea-4f0ac983cb880\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr17.fa.gz",
+    "retrieved_at": "2026-09-10T19:27:04.828155+00:00",
+    "sha256": "9acaede8d9b0a190489b49ebf38063bc69897c0d5f125c7549a6f7ee91a0b3c0",
+    "source": "UCSC GRCh38",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr17.fa.gz"
+  },
+  "hg38.chr2.fa.gz": {
+    "bytes": 78561132,
+    "etag": "\"4aebf6c-4f0ac98a78840\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr2.fa.gz",
+    "retrieved_at": "2026-09-10T19:27:21.724939+00:00",
+    "sha256": "748007e198312d16d6277dcdd48d4f050109273cacf1a7a09860f965f2060555",
+    "source": "UCSC GRCh38",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr2.fa.gz"
+  },
+  "hg38.chr22.fa.gz": {
+    "bytes": 12255678,
+    "etag": "\"bb01be-4f0ac98c60cc0\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr22.fa.gz",
+    "retrieved_at": "2026-09-10T19:27:09.819975+00:00",
+    "sha256": "05f9d97d6fbfd08a44ca45b50837ca2ae9c471f35ba79dffec04d2cb5eaaf695",
+    "source": "UCSC GRCh38",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr22.fa.gz"
+  },
+  "hg38.chr3.fa.gz": {
+    "bytes": 64527121,
+    "etag": "\"3d89b11-4f0ac98f3d380\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr3.fa.gz",
+    "retrieved_at": "2026-09-10T19:27:17.025513+00:00",
+    "sha256": "8085449fc0da498712ce08476ebe06dfc885a5421cb742eebacf35bcf1c9fce1",
+    "source": "UCSC GRCh38",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr3.fa.gz"
+  },
+  "hg38ToHg18.over.chain.gz": {
+    "bytes": 507477,
+    "etag": "\"7be55-649273f639b93\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/liftOver/hg38ToHg18.over.chain.gz",
+    "retrieved_at": "2026-09-10T19:26:53.301787+00:00",
+    "sha256": "4ab6888f3903e815735f72777679efb0b1de3e9611b32f190af3ab73a7c96eff",
+    "source": "UCSC liftOver",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/liftOver/hg38ToHg18.over.chain.gz"
+  },
+  "hg38ToHg19.over.chain.gz": {
+    "bytes": 1246411,
+    "etag": "\"1304cb-4eede88bbc4c0\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/liftOver/hg38ToHg19.over.chain.gz",
+    "retrieved_at": "2026-09-10T19:26:54.741548+00:00",
+    "sha256": "14a712e8e147d9fc8e9d87d51977b46f6f8ddb93efbe5d0843d86b6205f587b1",
+    "source": "UCSC liftOver",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/liftOver/hg38ToHg19.over.chain.gz"
+  },
+  "mm10ToHg38.over.chain.gz": {
+    "bytes": 70749762,
+    "etag": "\"4378e42-5136404ef4400\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/mm10/liftOver/mm10ToHg38.over.chain.gz",
+    "retrieved_at": "2026-09-10T19:33:23.520522+00:00",
+    "sha256": "78368ce28c5ccb0006b34889d652f4148b3900ac6805cd515d23b00c9773940e",
+    "source": "hgdownload.soe.ucsc.edu",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/mm10/liftOver/mm10ToHg38.over.chain.gz"
+  },
+  "phastCons_locus.json": {
+    "bytes": 16580464,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=phastCons100way;chrom=chr17;start=15220000;end=15450000",
+    "retrieved_at": "2026-09-10T19:31:09.837723+00:00",
+    "sha256": "419906f0eee857b864510d74b5e3f57a6cab962f1b802ffc781504d25efedab0",
+    "source": "api.genome.ucsc.edu",
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=phastCons100way;chrom=chr17;start=15220000;end=15450000"
+  },
+  "refseq_locus.json": {
+    "bytes": 14286,
+    "etag": null,
+    "publisher_md5": null,
+    "resolved_url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=ncbiRefSeq;chrom=chr17;start=15000000;end=15600000",
+    "retrieved_at": "2026-09-10T19:27:11.160664+00:00",
+    "sha256": "abe4dda637ea1d5b8972c36b49f5d408c86e3d0beae1aa97de93d2f014845ef7",
+    "source": "api.genome.ucsc.edu",
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=ncbiRefSeq;chrom=chr17;start=15000000;end=15600000"
+  },
+  "rn5ToHg38.over.chain.gz": {
+    "bytes": 71573460,
+    "etag": "\"4441fd4-4f58b7c173e80\"",
+    "publisher_md5": null,
+    "resolved_url": "https://hgdownload.soe.ucsc.edu/goldenPath/rn5/liftOver/rn5ToHg38.over.chain.gz",
+    "retrieved_at": "2026-09-10T19:27:20.756273+00:00",
+    "sha256": "5f0877e6333bc9a9bace32420255860e5b8ff6a75db78d326660e52d6d28c6e7",
+    "source": "UCSC liftOver",
+    "url": "https://hgdownload.soe.ucsc.edu/goldenPath/rn5/liftOver/rn5ToHg38.over.chain.gz"
+  }
+}

@@ -1,0 +1,5 @@
+model	C	validation_AP
+conservation	0.01	0.7173642644694322
+conservation	0.1	0.7174194850955399
+conservation	1.0	0.7174423494043215
+conservation	10.0	0.7174607049803134

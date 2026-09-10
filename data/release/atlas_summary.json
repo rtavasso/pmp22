@@ -1,0 +1,17 @@
+{
+  "candidate_count": 7,
+  "claim_boundary": "No new causal, clinical, or native-human perturbation result is asserted.",
+  "regions_unresolved": 0,
+  "regions_with_coordinates": 9,
+  "status": "public_data_release; native_human_validation_pending",
+  "table_rows": {
+    "assay_effects.tsv": 22,
+    "claim_ledger.tsv": 8,
+    "model_exposure.tsv": 4,
+    "prior_study_inventory.tsv": 13,
+    "regions.tsv": 9,
+    "samples.tsv": 34,
+    "software_lock.tsv": 13,
+    "source_overlap.tsv": 22
+  }
+}

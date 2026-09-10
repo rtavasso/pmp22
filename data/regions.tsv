@@ -1,5 +1,10 @@
 region_id	assembly	chrom	start	end	strand	element_class	source_id	evidence_status	orthology_status
-PMP22_P1	GRCh38				-	promoter_first_exon	GENCODE_R50	measured	native_human_unresolved_interval
-PMP22_P2	GRCh38				-	promoter_first_exon	GENCODE_R50	measured	native_human_unresolved_interval
-PMP22_INTRONIC	GRCh38				-	intronic_enhancer	JONES2011	measured	remapping_required
-PMP22_DISTAL	GRCh38				-	distal_enhancer_cluster	JBC2015	measured	remapping_required
+PMP22_INTRONIC	GRCh38	chr17	15247916	15248159	-	intronic_enhancer	JONES2011	measured	human_reference_remapped_reporter_evidence
+PMP22_INTRONIC_TRANSGENE	GRCh38	chr17	15246922	15248569	-	intronic_transgene	JONES2011	measured	human_reference_remapped_reporter_evidence
+PMP22_P2_REPORTER	GRCh38	chr17	15262455	15262891	-	promoter_reporter	JONES2011	measured	human_reference_remapped_reporter_evidence
+PMP22_DISTAL_A	GRCh38	chr17	15409812	15410108	-	distal_enhancer	JONES2012	measured	human_reference_remapped_reporter_evidence
+PMP22_DISTAL_B	GRCh38	chr17	15405970	15406367	-	distal_enhancer	JONES2012	measured	human_reference_remapped_reporter_evidence
+PMP22_DISTAL_C	GRCh38	chr17	15377645	15378054	-	distal_enhancer	JONES2012	measured	human_reference_remapped_reporter_evidence
+PMP22_P1	GRCh38	chr17	15265153	15265360	-	promoter_first_exon	GENCODE_R50	measured	annotated_human_first_exon_family
+PMP22_P2	GRCh38	chr17	15262428	15263190	-	promoter_first_exon	GENCODE_R50	measured	annotated_human_first_exon_family
+PMP22_DISTAL	GRCh38	chr17	15377645	15410108	-	distal_cluster_envelope	JONES2012	proposed	envelope_of_human_reporter_intervals_not_a_tested_human_deletion

@@ -1,0 +1,6 @@
+chrom	split	positive	negative	source_rows	merged_windows	ambiguous	duplicate_sequence	blacklist
+chr1	train	1678	1678	2792	1681	3	0	173
+chr2	train	1280	1280	2233	1316	0	0	85
+chr3	validation	1083	1083	1910	1110	1	0	47
+chr17	test	755	755	1216	767	1	0	79
+chr22	test	305	305	494	316	121	0	72

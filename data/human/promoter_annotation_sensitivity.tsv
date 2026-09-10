@@ -1,0 +1,7 @@
+annotation	promoter	exon_start	exon_end	donor	window_start	window_end	tags	interpretation
+RefSeq coding transcript first exon	PMP22_P2	15262428	15262552	CNhs12073	15262328	15262652	284.0	annotation sensitivity; no new state contrast
+RefSeq coding transcript first exon	PMP22_P2	15262428	15262552	CNhs12345	15262328	15262652	1.0	annotation sensitivity; no new state contrast
+RefSeq coding transcript first exon	PMP22_P2	15262428	15262552	CNhs12621	15262328	15262652	122.0	annotation sensitivity; no new state contrast
+RefSeq coding transcript first exon	PMP22_P1	15265153	15265326	CNhs12073	15265053	15265426	22.0	annotation sensitivity; no new state contrast
+RefSeq coding transcript first exon	PMP22_P1	15265153	15265326	CNhs12345	15265053	15265426	0	annotation sensitivity; no new state contrast
+RefSeq coding transcript first exon	PMP22_P1	15265153	15265326	CNhs12621	15265053	15265426	1.0	annotation sensitivity; no new state contrast

@@ -1,6 +1,23 @@
 parent_id	child_id	relationship	independence	notes
-FANTOM5	Borzoi_target_806_807	training_target_source	not_independent	Label/path donor mismatch remains unresolved
-CATlas	Borzoi_kai199	training_target_source	not_independent	Original donors remain unresolved
-ENCODE_tibial_tracks	Borzoi_targets	training_target_source	not_independent	Track use must be audited per checkpoint
-GSE64703	published_SOX10_study	deposit_for_publication	not_independent	Do not double count publication and deposit
-GSE64971	published_H3K27ac_study	deposit_for_publication	not_independent	One IP and input are not biological replicates
+FANTOM5	Borzoi_targets_806_807	training_target_source	not_independent	CNhs12621 label / CNhs12073 path mismatch unresolved
+CATlas	Borzoi_kai199	training_target_source	not_independent	kai199 and ENCSR301DUJ equivalence not established
+GSE64703	Lopez_Anido_2015	deposit_for_publication	not_independent	Multiple derived tracks remain one source experiment family
+GSE64971	Lopez_Anido_2015	deposit_for_publication	not_independent	One IP plus input is not n=2
+GSE63103	HUNG2015	deposit_for_publication	not_independent	Author differential peak labels reused
+ENCSR726QTF	ENCSR301DUJ	source_alignment_ENCFF029IGD	not_independent	Female donor ENCDO793LXB; age 53
+ENCSR205TUH	ENCSR301DUJ	source_alignment_ENCFF540FVR	not_independent	Female donor ENCDO271OUW; age 51
+ENCSR301DUJ	ENCFF602YVR	IDR_peak_derivative	not_independent	One pooled Schwann product
+ENCSR301DUJ	ENCFF632FMT	broad_peak_derivative	not_independent	Threshold sensitivity, not independent replication
+ENCSR301DUJ	ENCSR221DFU	identical_peak_MD5	not_independent	Leg Schwann alternate annotation; ENCFF414RAQ/ENCFF251PBC duplicate the selected peak bytes
+ENCFF602YVR	new_sequence_benchmark	fixed_external_labels	not_independent	Chromosome holdout only; retrospective within-profile classification
+ENCDO793LXB	ENCSR771YJT	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors
+ENCDO845WKR	ENCSR580XUK	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors
+ENCDO271OUW	ENCSR401ESD	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors
+ENCDO793LXB	ENCSR469POZ	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors
+ENCDO271OUW	ENCSR154GUK	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors
+ENCDO793LXB	ENCSR157ZVP	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors
+ENCDO793LXB	ENCSR479GPU	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors
+ENCDO271OUW	ENCSR272UNO	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors
+ENCDO451RUA	ENCSR648OSR	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors
+ENCDO845WKR	ENCSR796HLX	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors
+ENCDO793LXB	ENCSR858QEL	same_donor_tissue_source	not_independent	Different assays/subsections cannot be counted as independent human donors

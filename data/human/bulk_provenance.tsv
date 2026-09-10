@@ -1,0 +1,12 @@
+experiment	assay	target	library	biosample	donor	age	sex	bio_replicate	controls	selected_file	annotation	limitation
+ENCSR771YJT	Histone ChIP-seq	H3K27ac	ENCLB983BAB	ENCBS248LIK	ENCDO793LXB	53	female	1	ENCSR154SJE	ENCFF703WKZ		bulk tissue; one biological sample per experiment; shared donors across assays
+ENCSR580XUK	TF ChIP-seq	EP300	ENCLB050YTS	ENCBS182BFY	ENCDO845WKR	37	male	1	ENCSR846VRM	ENCFF474ZLP		bulk tissue; one biological sample per experiment; shared donors across assays
+ENCSR401ESD	DNase-seq		ENCLB470GUB	ENCBS036BKD	ENCDO271OUW	51	female	1		ENCFF095QHF		bulk tissue; one biological sample per experiment; shared donors across assays
+ENCSR469POZ	TF ChIP-seq	CTCF	ENCLB769ICA	ENCBS004OVW	ENCDO793LXB	53	female	1	ENCSR999DEZ	ENCFF831KJJ		bulk tissue; one biological sample per experiment; shared donors across assays
+ENCSR154GUK	TF ChIP-seq	POLR2A	ENCLB072TCM	ENCBS689AWK	ENCDO271OUW	51	female	2	ENCSR510GIX	ENCFF065MQK		bulk tissue; one biological sample per experiment; shared donors across assays
+ENCSR157ZVP	Histone ChIP-seq	H3K36me3	ENCLB904CMO	ENCBS248LIK	ENCDO793LXB	53	female	1	ENCSR154SJE	ENCFF425MZT		bulk tissue; one biological sample per experiment; shared donors across assays
+ENCSR479GPU	Histone ChIP-seq	H3K9me3	ENCLB334YNF	ENCBS248LIK	ENCDO793LXB	53	female	1	ENCSR154SJE	ENCFF671DNU		bulk tissue; one biological sample per experiment; shared donors across assays
+ENCSR272UNO	total RNA-seq		ENCLB966RBB	ENCBS473HNM	ENCDO271OUW	51	female	1		ENCFF398VOV	V29	bulk tissue; one biological sample per experiment; shared donors across assays
+ENCSR648OSR	total RNA-seq		ENCLB575RKD	ENCBS649YYM	ENCDO451RUA	54	male	1		ENCFF005RLW	V29	bulk tissue; one biological sample per experiment; shared donors across assays
+ENCSR796HLX	total RNA-seq		ENCLB478GSY	ENCBS986CBC	ENCDO845WKR	37	male	1		ENCFF197RQL	V29	bulk tissue; one biological sample per experiment; shared donors across assays
+ENCSR858QEL	total RNA-seq		ENCLB464VVH	ENCBS358ZMI	ENCDO793LXB	53	female	1		ENCFF495AYZ	V29	bulk tissue; one biological sample per experiment; shared donors across assays

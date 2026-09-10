@@ -1,0 +1,5 @@
+model	C	validation_AP
+GC_CpG	10.0	0.9300072551188512
+distance_to_annotated_TSS	0.01	0.8920513144337539
+SOX10_EGR2_TEAD1_motifs	0.01	0.855670391689153
+4mer_sequence_logistic	0.01	0.9655552789884054

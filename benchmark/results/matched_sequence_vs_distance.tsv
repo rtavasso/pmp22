@@ -1,0 +1,2 @@
+subset	contrast	blocks	draws	AP_difference	low	high	interpretation
+GC_matched_test	sequence_composite_AP_minus_distance_AP	110	500	0.013138679336079817	-0.03577942605329363	0.06227599720643365	post-test diagnostic; no new model selection
