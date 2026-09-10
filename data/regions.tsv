@@ -1,0 +1,5 @@
+region_id	assembly	chrom	start	end	strand	element_class	source_id	evidence_status	orthology_status
+PMP22_P1	GRCh38				-	promoter_first_exon	GENCODE_R50	measured	native_human_unresolved_interval
+PMP22_P2	GRCh38				-	promoter_first_exon	GENCODE_R50	measured	native_human_unresolved_interval
+PMP22_INTRONIC	GRCh38				-	intronic_enhancer	JONES2011	measured	remapping_required
+PMP22_DISTAL	GRCh38				-	distal_enhancer_cluster	JBC2015	measured	remapping_required

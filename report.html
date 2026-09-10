@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Executed processed-data analysis of regulatory evidence near rat Pmp22.">
+  <title>Project A findings — PMP22 regulatory atlas</title>
+  <style>
+    :root{--ink:#16262b;--muted:#576a70;--line:#d8e1df;--paper:#fff;--wash:#f2f7f5;--accent:#08736e;--pns:#16877f;--cns:#9aa8ab;--h3:#c1843e;--max:1040px}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.62 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:var(--max);margin:auto;padding:64px 34px 90px}header{border-bottom:1px solid var(--line);padding-bottom:32px;margin-bottom:40px}.eyebrow{color:var(--accent);font-size:13px;font-weight:750;letter-spacing:.09em;text-transform:uppercase}h1{font-size:clamp(36px,6vw,64px);line-height:1.03;letter-spacing:-.045em;max-width:850px;margin:10px 0 22px}h2{font-size:27px;line-height:1.2;margin:42px 0 17px}h3{font-size:18px;margin:0 0 8px}.lead{max-width:810px;color:#354a50;font-size:20px}.stamp{font-size:13px;color:var(--muted)}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:30px 0}.metric{border-top:3px solid var(--accent);background:var(--wash);padding:18px}.metric strong{font-size:32px;line-height:1;display:block;margin-bottom:7px}.metric span{font-size:13px;color:var(--muted)}.grid{display:grid;grid-template-columns:1.3fr .7fr;gap:30px}.card{border:1px solid var(--line);padding:22px}.chart{margin:20px 0}.bar-row{display:grid;grid-template-columns:170px 1fr 42px;gap:10px;align-items:center;margin:12px 0;font-size:14px}.bar-bg{height:18px;background:#e6eceb}.bar{height:100%;min-width:2px}.pns{background:var(--pns)}.cns{background:var(--cns)}.h3{background:var(--h3)}.method{counter-reset:method;list-style:none;padding:0}.method li{counter-increment:method;position:relative;padding:0 0 20px 43px}.method li:before{content:counter(method,decimal-leading-zero);position:absolute;left:0;color:var(--accent);font-weight:750}.notice{border-left:4px solid #b06d26;background:#fff7ed;padding:17px 20px}.sources{padding-left:21px}.sources li{margin-bottom:12px}.sources a{color:#076762;text-underline-offset:3px}.file{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.88em}footer{border-top:1px solid var(--line);margin-top:44px;padding-top:18px;color:var(--muted);font-size:13px}@media(max-width:760px){main{padding:38px 20px 60px}.metrics{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.bar-row{grid-template-columns:125px 1fr 35px}}@media print{main{padding:0}.metric{break-inside:avoid}a{color:inherit}.notice{background:none}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">Project A · executed report</div>
+    <h1>Regulatory activity surrounds rat <i>Pmp22</i></h1>
+    <p class="lead">A checksum-pinned analysis of public processed tracks finds substantially more peripheral-nerve SOX10 peak calls than central-nervous-system calls near <i>Pmp22</i>, alongside sciatic-nerve H3K27ac support.</p>
+    <p class="stamp">Analysis window: rn5 chr10:48,316,999–50,346,994 · Generated 10 September 2026</p>
+  </header>
+
+  <section aria-labelledby="findings">
+    <h2 id="findings">Findings at a glance</h2>
+    <div class="metrics">
+      <div class="metric"><strong>35</strong><span>PNS SOX10 peaks</span></div>
+      <div class="metric"><strong>3</strong><span>CNS SOX10 peaks</span></div>
+      <div class="metric"><strong>28</strong><span>PNS H3K27ac peaks</span></div>
+      <div class="metric"><strong>3</strong><span>distinct FANTOM donors</span></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Processed peak records within the 2.03 Mb window</h3>
+        <div class="chart" role="img" aria-label="PNS SOX10 has 35 peaks, CNS SOX10 has 3 peaks, PNS differential SOX10 has 21 peaks, CNS differential SOX10 has zero peaks, and PNS H3K27ac has 28 peaks.">
+          <div class="bar-row"><span>PNS SOX10</span><div class="bar-bg"><div class="bar pns" style="width:100%"></div></div><b>35</b></div>
+          <div class="bar-row"><span>CNS SOX10</span><div class="bar-bg"><div class="bar cns" style="width:8.57%"></div></div><b>3</b></div>
+          <div class="bar-row"><span>PNS differential</span><div class="bar-bg"><div class="bar pns" style="width:60%"></div></div><b>21</b></div>
+          <div class="bar-row"><span>CNS differential</span><div class="bar-bg"><div class="bar cns" style="width:0"></div></div><b>0</b></div>
+          <div class="bar-row"><span>PNS H3K27ac</span><div class="bar-bg"><div class="bar h3" style="width:80%"></div></div><b>28</b></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Signal summaries</h3>
+        <p>Covered-base means were <b>4.081578</b> for PNS SOX10, <b>0.775705</b> for CNS SOX10, and <b>3.609413</b> for PNS H3K27ac.</p>
+        <p><b>Do not compare these as normalized effect sizes.</b> They are submitter-provided bedGraph values with track-specific coverage and scales.</p>
+      </div>
+    </div>
+    <p>The PNS and CNS differential files contained 21 and 0 window-overlapping records, respectively. Seven of eight processed genomic tracks had at least one record in the window. The FANTOM metadata independently recovered CNhs12073/donor1, CNhs12345/donor2, and CNhs12621/donor3.</p>
+  </section>
+
+  <section aria-labelledby="methodology">
+    <h2 id="methodology">Methodology</h2>
+    <ol class="method">
+      <li><b>Pin and verify.</b> Download 12 GEO, FANTOM, and UCSC inputs over HTTPS and require the committed SHA-256 digest for every file.</li>
+      <li><b>Freeze the locus.</b> Derive the unioned rn5 RefGene span for <i>Pmp22</i> (chr10:49,316,999–49,346,994, plus strand), then add 1 Mb flanks.</li>
+      <li><b>Stream processed tracks.</b> Count BED/bedGraph records overlapping the zero-based, half-open window. For signal tracks, calculate a base-pair-weighted mean over reported covered bases and retain the maximum.</li>
+      <li><b>Reconcile donors.</b> Select the three named Schwann CAGE libraries from the original FANTOM SDRF, preserving extract, sample, RIN, and file fields.</li>
+      <li><b>Preserve provenance.</b> Commit the full locus slice, QC table, donor extract, summary, and code; exclude large raw downloads while retaining URLs and checksums.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="interpretation">
+    <h2 id="interpretation">Interpretation</h2>
+    <div class="notice"><b>Descriptive evidence, not a causal test.</b> The excess of PNS peak calls is consistent with peripheral-nerve regulatory occupancy near <i>Pmp22</i>. It is not a formal PNS-versus-CNS effect estimate: submitted peak sets can differ in threshold and width, bedGraphs are combined tracks, and the H3K27ac deposit contains one IP plus its input—not two biological replicates. No native-human perturbation, therapeutic selectivity, or RNA/protein effect is established.</div>
+  </section>
+
+  <section aria-labelledby="artifacts">
+    <h2 id="artifacts">Reproducible artifacts</h2>
+    <p><span class="file">python -m pmp22_atlas download</span> retrieves and verifies inputs; <span class="file">python -m pmp22_atlas analyze</span> recreates the committed outputs. Exact records are in <span class="file">data/derived/rn5_pmp22_locus_tracks.tsv</span>; track statistics are in <span class="file">data/derived/track_qc.tsv</span>.</p>
+  </section>
+
+  <section aria-labelledby="sources">
+    <h2 id="sources">Sources</h2>
+    <ol class="sources">
+      <li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE64703">GEO GSE64703</a> — rat P15 CNS/PNS SOX10 ChIP-seq, processed peaks and bedGraphs.</li>
+      <li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE64971">GEO GSE64971</a> — rat P15 sciatic-nerve H3K27ac ChIP-seq.</li>
+      <li><a href="https://fantom.gsc.riken.jp/5/datafiles/latest/basic/human.primary_cell.hCAGE/00_human.primary_cell.hCAGE.hg19.assay_sdrf.txt">FANTOM5 primary-cell hCAGE SDRF</a> — original Schwann sample metadata.</li>
+      <li><a href="https://hgdownload.soe.ucsc.edu/goldenPath/rn5/database/">UCSC rn5 database</a> — RefGene table used to define the locus.</li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3100536/">Jones et al. (2011)</a> — foundational PMP22 intronic-enhancer study.</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/25614629/">Ma et al. (2015)</a> — peripheral-nerve injury enhancer study associated with the GEO deposits.</li>
+    </ol>
+  </section>
+  <footer>Project A · Public processed-data analysis · Research use only; not clinical guidance.</footer>
+</main>
+</body>
+</html>

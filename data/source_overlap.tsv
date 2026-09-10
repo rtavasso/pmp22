@@ -1,0 +1,6 @@
+parent_id	child_id	relationship	independence	notes
+FANTOM5	Borzoi_target_806_807	training_target_source	not_independent	Label/path donor mismatch remains unresolved
+CATlas	Borzoi_kai199	training_target_source	not_independent	Original donors remain unresolved
+ENCODE_tibial_tracks	Borzoi_targets	training_target_source	not_independent	Track use must be audited per checkpoint
+GSE64703	published_SOX10_study	deposit_for_publication	not_independent	Do not double count publication and deposit
+GSE64971	published_H3K27ac_study	deposit_for_publication	not_independent	One IP and input are not biological replicates

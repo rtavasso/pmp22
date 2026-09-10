@@ -1,0 +1,9 @@
+file	records_genome_wide	records_in_window	signal_covered_bp	signal_mean_covered_bp	signal_max
+GSE64703_Sox10_CNS_DB_peaks.bed.gz	5733	0	0		
+GSE64703_Sox10_PNS_DB_peaks.bed.gz	5767	21	0		
+GSE64703_Sox10_SN_run204.ucsc.bedGraph.gz	4037281	4795	412231	4.081578	65.1
+GSE64703_Sox10_peaks_CNS.bed.gz	6761	3	0		
+GSE64703_Sox10_peaks_PNS.bed.gz	13255	35	0		
+GSE64703_sox10_SC_run128.ucsc.bedGraph.gz	7663716	6219	1559837	0.775705	21.6
+GSE64971_H3K27ac_P15_sciatic_nerve.bed.gz	32996	28	0		
+GSE64971_H3K27ac_P15_sciatic_nerve.ucsc.bedGraph.gz	10492620	25220	645180	3.609413	93.82

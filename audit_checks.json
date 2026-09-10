@@ -1,0 +1,10 @@
+{
+  "checks": [
+    {"id": "schema", "command": "python -m pmp22_atlas validate", "scope": "document and manifest integrity"},
+    {"id": "tests", "command": "python -m unittest discover -s tests -v", "scope": "software regression only"},
+    {"id": "raw_qc", "status": "pending", "scope": "read-level empirical validation"},
+    {"id": "model_validation", "status": "pending", "scope": "held-out model performance"},
+    {"id": "native_perturbation", "status": "pending", "scope": "causal human evidence"}
+  ],
+  "warning": "Passing bundled checks does not validate the scientific pipeline or create biological evidence."
+}

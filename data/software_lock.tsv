@@ -1,0 +1,6 @@
+component	version	reference	purpose
+Python	3.11+	CPython standard library	manifest validation and build
+reference_genome	GRCh38.p14	GENCODE human release 50	planned human coordinate system
+annotation	GENCODE_50	https://www.gencodegenes.org/human/releases.html	planned transcript annotation
+Borzoi	UNPINNED	https://github.com/calico/borzoi	blocked until checkpoint audit
+AlphaGenome	UNPINNED	https://github.com/google-deepmind/alphagenome_research	blocked until checkpoint and terms audit

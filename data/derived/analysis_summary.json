@@ -1,0 +1,17 @@
+{
+  "assembly": "rn5",
+  "fantom_donors": 3,
+  "gene": {
+    "chrom": "chr10",
+    "end": 49346994,
+    "start": 49316999,
+    "strand": "+"
+  },
+  "interpretation": "Processed-track descriptive analysis; inputs are not biological replicates and no causal effect is estimated.",
+  "tracks": 8,
+  "tracks_with_locus_records": 7,
+  "window": {
+    "end": 50346994,
+    "start": 48316999
+  }
+}

@@ -1,0 +1,6 @@
+model_id	checkpoint	source_id	interval_exposure	source_exposure	assay_exposure	status	notes
+Borzoi	unfrozen	FANTOM5	unknown	known	known_CAGE	unresolved	Resolve donor pooling and checkpoint before evaluation
+Borzoi	unfrozen	CATlas	unknown	known	known_ATAC	unresolved	kai199 source/donors unresolved
+Borzoi	unfrozen	ENCODE_tibial_tracks	unknown	known	known_multiple	unresolved	Audit each target and checkpoint
+AlphaGenome	all_folds_quickstart	unknown	known_possible	unknown	unknown	unresolved	All-fold inference cannot certify a genomic holdout
+ChromBPNet	to_be_trained	candidate_human_ATAC	train_split_required	train_split_required	ATAC	pending	Fit bias and peaks on training data only

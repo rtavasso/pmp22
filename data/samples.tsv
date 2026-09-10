@@ -1,0 +1,11 @@
+sample_id	source_id	species	tissue	state	assay	role	donor_or_pool	download_status	permission
+GSM1577133	GSE64703	rat	spinal_cord	P15	SOX10_ChIP	IP	pooled_unresolved	processed_and_metadata_downloaded	public
+GSM1577134	GSE64703	rat	spinal_cord	P15	SOX10_ChIP	IP	pooled_unresolved	processed_and_metadata_downloaded	public
+GSM1577135	GSE64703	rat	sciatic_nerve	P15	SOX10_ChIP	IP	pooled_unresolved	processed_and_metadata_downloaded	public
+GSM1577136	GSE64703	rat	sciatic_nerve	P15	SOX10_ChIP	IP	pooled_unresolved	processed_and_metadata_downloaded	public
+GSM1577137-7140	GSE64703	rat	matched_tissue	P15	input	control	pooled_unresolved	processed_and_metadata_downloaded	public
+GSM1585357	GSE64971	rat	sciatic_nerve	P15	H3K27ac_ChIP	IP	one_pool	processed_and_metadata_downloaded	public
+GSM1585358	GSE64971	rat	sciatic_nerve	P15	input	control	one_pool	processed_and_metadata_downloaded	public
+CNhs12073	FANTOM5	human	cultured_Schwann	unspecified	CAGE	measurement	donor1_11498-119F4	metadata_verified	verify_terms
+CNhs12345	FANTOM5	human	cultured_Schwann	unspecified	CAGE	measurement	donor2_11578-120F3	metadata_verified	verify_terms
+CNhs12621	FANTOM5	human	cultured_Schwann	unspecified	CAGE	measurement	donor3_11659-122F3	metadata_verified	verify_terms

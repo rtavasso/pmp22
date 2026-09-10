@@ -1,0 +1,5 @@
+claim_id	claim	unit	estimand	source_ids	independence	limiting_assumptions	allowed_conclusion
+C001	PMP22 has promoter-associated alternative noncoding first exons	annotated_transcript	annotation/supporting literature	GENCODE_R50;JONES2011	partly_shared	Release-specific transcript support must be inspected	Promoter usage should be analyzed separately
+C002	Distal and intronic regions have published regulatory evidence	tested_construct_or_locus	assay-specific treatment-control difference	JONES2011;JBC2015	independent_publications	Human interval remapping and effect extraction pending	Regions are evidence-backed candidates, not proven human therapeutic targets
+C003	FANTOM records identify three donor labels	sample_record	metadata identity	FANTOM5	one_source	Biological QC and pooling recipe unresolved	Treat records as distinct labels; do not claim independent validation yet
+C004	The atlas is ready for causal native-human conclusions	native_human_perturbation	PMP22 RNA/protein change	NONE	missing	No suitable result was generated	Not allowed
