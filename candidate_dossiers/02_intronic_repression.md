@@ -8,7 +8,7 @@
 
 ## Evidence and rationale
 
-The 243 bp reference interval maps reciprocally from the Jones 2011 reporter and overlaps stringent Schwann accessibility plus bulk H3K27ac/EP300. Published EGR2 site-4 reporter mutation reduced activity by approximately 50% in a mouse reporter-cell context.
+The 243 bp reference interval maps reciprocally from the Jones 2011 reporter and overlaps stringent Schwann accessibility plus bulk H3K27ac/EP300. EGR2 site-4 mutation reduced EGR2 fold induction by approximately 50% in mouse B16/F10 cells. Each construct was normalized to its own no-EGR2 baseline; this is not a 50% reduction in induced output. Figure 3 reports n=6, with measurement independence unresolved.
 
 ## Falsifiable hypothesis
 
@@ -30,6 +30,11 @@ one study or donor exclusively to a state. Include non-targeting controls, an
 effector-only control, the proposed matched DNA intervals, and at least two
 independent targeting reagents per region. Reagents and on-target occupancy
 need validation before interpreting a negative expression result.
+Include the two proposed accessible comparison loci alongside the closed DNA
+controls. Confirm comparable recruitment and local chromatin modulation in the
+actual donor/state; absence of recruitment at a closed site is not a functional
+negative control for inhibition at an accessible enhancer. Accessible comparison
+loci are also untested and may regulate other genes or PMP22.
 
 Primary endpoint: donor-paired change in total PMP22 RNA relative to the matched
 control. Measure P1/exon1A and P2/exon1B initiation separately; measure protein

@@ -88,20 +88,21 @@ def benchmark_plot():
     cic=read(BENCH/'supplemental_bootstrap.tsv')
     names=['prevalence','GC_CpG','SOX10_EGR2_TEAD1_motifs','distance_to_annotated_TSS','conservation','4mer_sequence_logistic','permuted_training_labels']
     labels=['Prevalence','GC / CpG','Motifs','TSS distance','Conservation*','Sequence composite','Permuted labels']
-    fig,ax=plt.subplots(figsize=(11,4.8));x=np.arange(len(names))
-    for subset,offset,color,title,interval in [('all_test',-.18,BLUE,'All test · n=2,120',ci),
-                                               ('GC_matched_test',.18,TEAL,'GC matched · n=600',cim)]:
+    fig,axes=plt.subplots(2,1,figsize=(11,7.4));x=np.arange(len(names))
+    for ax,(subset,color,title,interval) in zip(axes,[('all_test',BLUE,'Original test · n=2,120 · 78.3% of positives within 2 kb of TSS',ci),
+                                               ('GC_matched_test',TEAL,'GC-matched subset · n=600 · 53.7% of positives within 2 kb of TSS',cim)]):
         values=[];lower=[];upper=[]
         for name in names:
             value=float(metric[metric.model.eq(name)&metric.subset.eq(subset)].average_precision.iloc[0])
             c=interval[interval.model.eq(name)]
             if c.empty:c=cic[cic.model.eq(name)]
             values.append(value);lower.append(value-float(c.AP_low.iloc[0]));upper.append(float(c.AP_high.iloc[0])-value)
-        ax.bar(x+offset,values,.34,color=color,label=title,yerr=[lower,upper],capsize=2,error_kw={'elinewidth':.8})
-    ax.axhline(.5,color=GRAY,linestyle='--',lw=.8)
-    ax.set(xticks=x,xticklabels=labels,ylim=(0,1.12),ylabel='Average precision · higher is better')
-    ax.tick_params(axis='x',labelrotation=18);ax.legend(frameon=False,loc='upper left',ncol=2)
-    ax.grid(axis='y',alpha=.12);fig.subplots_adjust(bottom=.24)
+        ax.bar(x,values,.64,color=color,yerr=[lower,upper],capsize=2,error_kw={'elinewidth':.8})
+        ax.axhline(.5,color=GRAY,linestyle='--',lw=.8)
+        ax.set(xticks=x,xticklabels=labels,ylim=(0,1.05),ylabel='Average precision',title=title)
+        ax.tick_params(axis='x',labelrotation=12);ax.grid(axis='y',alpha=.12)
+    fig.suptitle('Compare models within each panel; panels use different populations',fontsize=12)
+    fig.subplots_adjust(bottom=.11,hspace=.58,top=.89)
     return save(fig,'benchmark')
 
 
@@ -148,6 +149,13 @@ def main():
     metrics=pd.concat([read(BENCH/'metrics.tsv'),read(BENCH/'supplemental_metrics.tsv')])
     metric_table=metrics[metrics.subset.isin(['all_test','GC_matched_test'])][['model','subset','n','average_precision','AUROC','Brier_score']].copy()
     for c in ['average_precision','AUROC','Brier_score']:metric_table[c]=metric_table[c].astype(float).round(3)
+    composition=read(BENCH/'test_composition.tsv').copy()
+    composition['label']=composition.label.map({0:'background',1:'positive'})
+    composition=composition[['subset','label','n','within_2kb_TSS','median_TSS_distance','median_CpG']]
+    composition['median_CpG']=composition.median_CpG.round(5)
+    distal=read(BENCH/'stratified_metrics.tsv')
+    distal=distal[distal.subset.eq('GC_matched_beyond_2kb_TSS')][['model','n','positive','prevalence','average_precision','AUROC']].copy()
+    for c in ['prevalence','average_precision','AUROC']:distal[c]=distal[c].astype(float).round(3)
     figures=[locus_plot(),cage_plot(),benchmark_plot()]
     dossiers=''.join('<details class="dossier"><summary>'+html.escape(path.read_text(encoding='utf-8').splitlines()[0].lstrip('# '))+'</summary>'+
         simple_markdown(path.read_text(encoding='utf-8'))+'</details>' for path in sorted((ROOT/'candidate_dossiers').glob('*.md')))
@@ -159,6 +167,10 @@ def main():
         (DATA/'source_overlap.tsv','Source relationships'),(ROOT/'benchmark/splits.tsv','Frozen split'),
         (BENCH/'predictions.tsv','Test predictions'),(BENCH/'metrics.tsv','Primary metrics'),
         (BENCH/'supplemental_metrics.tsv','Supplemental metrics'),(HUMAN/'candidate_negative_controls.tsv','Control intervals'),
+        (HUMAN/'candidate_accessible_controls.tsv','Accessible comparison sites'),
+        (HUMAN/'rat_mapping_overlap_audit.tsv','Rat mapping and overlap audit'),
+        (BENCH/'test_composition.tsv','Test population composition'),(BENCH/'stratified_metrics.tsv','Stratified performance'),
+        (BENCH/'composition_only_scores.tsv','GC and CpG ranking checks'),
         (DATA/'acceptance_audit.tsv','Acceptance audit'),(DATA/'resource_lock.json','Resource lock')])
     sources=[
         ('Jones 2011 · intronic reporter','https://pmc.ncbi.nlm.nih.gov/articles/PMC3100536/'),
@@ -210,14 +222,15 @@ human experiments are specified in seven dossiers.</p>
 <nav aria-label="Report sections"><a href="#findings">Findings</a><a href="#atlas">Human atlas</a><a href="#promoters">Promoters</a><a href="#effects">Prior effects</a><a href="#benchmark">Benchmark</a><a href="#dossiers">Dossiers</a><a href="#audit">Audit & files</a></nav>
 <section id="findings"><h2>What completing the analysis gives you</h2>
 <div class="cards"><div class="card"><strong>9</strong><span>human reference intervals</span></div><div class="card"><strong>3</strong><span>separate CAGE donor files</span></div><div class="card"><strong>22</strong><span>typed published assay records</span></div><div class="card"><strong>7</strong><span>experimental dossiers</span></div></div>
-<div class="finding"><strong>Best supported human nominations:</strong> distal C and the intronic element
+<div class="finding"><strong>Accessibility-supported human nominations:</strong> distal C and the intronic element
 overlap stringent Schwann accessibility peaks. A and B remain plausible, with support at the broader
 threshold. This prioritizes experiments; accessibility alone does not assign a causal PMP22 effect.</div>
 <div class="two"><div><h3>Measured human evidence</h3><p>Two adult female donors contribute to the pooled
 Schwann ATAC product. Three cultured donors have separate CAGE files, with two informative at PMP22.
 Eleven bulk-nerve assays trace to four donors and add tissue context.</p></div>
 <div><h3>The model result is conditional</h3><p>The sequence classifier looks strong against random
-background. After matching GC composition, its advantage over a distance-to-gene baseline is uncertain.
+background. GC matching changes the test population and leaves CpG differences. Within the matched set,
+its advantage over a distance-to-gene baseline is uncertain.
 The result supports a modest within-profile benchmark, not a disease or perturbation prediction.</p></div></div>
 <div class="note"><strong>Completion boundary.</strong> This release completes the public-data analysis and
 experimental handoff. The original scientific contract still requires native human noncoding perturbations,
@@ -233,6 +246,9 @@ Bulk H3K27ac/EP300 add tissue-level evidence. The distal envelope is not a teste
 <p><strong>A/B are threshold-sensitive, not proven inactive.</strong> Both have bulk H3K27ac support.
 C and the intronic interval also overlap EP300 in bulk nerve. Neither chromatin overlap nor conservation
 demonstrates a selective native effect on PMP22.</p>
+<p>One 25,903 bp H3K27ac peak overlaps five annotated regions. The evidence matrix now retains
+shared source-interval IDs, evidence families and donor IDs so repeated entries cannot be mistaken
+for independent support. Candidate priority is an experimental choice, not measured enhancer strength.</p>
 <details><summary>Coordinate and source caveats</summary><p>Printed coordinates retain a possible 1 bp convention
 ambiguity until cloned inserts are sequenced or verified against original plasmids/supplements. Exported
 FASTA is reference sequence. Mouse-to-human SE mapping covers only 54.5% of the mouse interval; gaps
@@ -262,6 +278,12 @@ Whole-library QC is available, but Schwann-subset FRiP, cell count and TSS enric
 mutation, <strong>45% for B</strong> after EGR2_1 mutation, and <strong>65% for C</strong> after SOX10_1 mutation.
 These are human DNA constructs tested in rat S16 cells. They are not predicted human RNA or protein changes.
 Other tested B/C mutations with no significant reduction remain in the effect table.</p>
+<div class="note"><strong>Corrected intronic endpoint:</strong> the approximately 50% site-4 effect in Jones 2011
+is a reduction in EGR2 fold induction. Each construct is divided by its own no-EGR2 baseline.
+It is not a directly comparable 50% loss of induced reporter output. Figure 3 reports n=6;
+the independence of those measurements remains unresolved. Distinct mutations and native RNA assays
+retain their own outcomes and denominators. Mouse RNA statistical provenance no longer asserts an
+unsupported ANOVA-only procedure.</div>
 <div class="finding"><strong>Native rat deletion:</strong> Pantera 2018 reports approximately half the
 WT-allele Pmp22 RNA after deleting the SE on two alleles in a roughly three-copy reporter line.
 The comparison is three deletion clones versus five controls; the intact reporter allele is an internal
@@ -276,6 +298,9 @@ noncoding-only regulatory labels. Deletion vulnerability does not establish acti
 <p>The 2 Mb rn5 Pmp22 window contains 83 sham and 38 injury peak records, with 25 sham-enriched and
 3 injury-enriched records from the original differential files. Counts depend on peak widths and thresholds;
 this is not a new differential test. Eight imprecise coordinates were excluded outside the locus.
+No exact C differential peak is present. Two partially aligned sham overlaps do not demonstrate
+a C-specific injury response. These whole-nerve measurements also leave cell composition unresolved.
+The new mapping audit retains excluded candidate matches; accepted counts are not complete activity coverage.
 The original tissue pilot reproduces <strong>35</strong> PNS versus <strong>3</strong> CNS SOX10 peaks and
 28 P15 H3K27ac peaks. GSE64703 library-depth imbalance prevents treating those counts as an expression effect.</p>
 </section>
@@ -285,11 +310,24 @@ chromosomes 17/22. The test has 2,120 balanced positive/background windows in 11
 It is a chromosome holdout within one source, not an independent donor or intervention test.</p>
 <figure>{figures[2]}<figcaption>Bars show AP; error bars are 95% intervals from 500 genomic-block bootstrap
 draws, conditional on this source and sampling. The dashed line is the constructed 50% prevalence.
-The GC-matched subset has 600 windows/110 blocks. *Conservation and additional diagnostics were added
+The GC-matched subset retains 28.3% of the original examples. The score change across panels cannot
+be attributed to GC alone. *Conservation and additional diagnostics were added
 after the first test run and are explicitly supplemental.</figcaption></figure>
 <div class="note"><strong>The comparison that changes the interpretation:</strong> on GC-matched windows,
 sequence AP is 0.784 versus 0.771 for TSS distance. Their paired AP difference is 0.013
 (95% interval −0.036 to 0.062). The benchmark does not establish superiority over this simple comparator.</div>
+<h3>Which examples are being compared?</h3>
+{htable(composition)}
+<p>Matching GC percentage changes promoter proximity and does not match CpG frequency.
+In the matched subset, ranking by GC alone gives AP 0.506; CpG alone gives AP 0.679.
+The original positives are predominantly promoter-proximal; random backgrounds avoid broad ATAC peaks
+plus 1 kb. This is not a benchmark of enhancer function or Schwann specificity.</p>
+<details><summary>Exploratory reanalysis beyond 2 kb from annotated TSSs</summary>
+{htable(distal)}
+<p>The frozen sequence model gives AP 0.580 and AUROC 0.746 on the matched subset beyond 2 kb from
+annotated TSSs. Here the positive prevalence, and therefore the constant-score AP reference, is 0.360.
+These are post-review diagnostics. Different strata change prevalence and case mix; compare models
+within a stratum. Distance from a TSS does not certify enhancer identity. No models were reselected.</p></details>
 <p>The sequence composite uses GC/CpG, SOX10/EGR2/TEAD1 motif maxima and canonical 4-mers. AP is a
 ranking measure, not “96.6% accuracy.” Calibration applies to this balanced sample, not arbitrary genomic
 loci. A ±100 bp window shift gives AP 0.964 in both directions without refitting. The permutation control

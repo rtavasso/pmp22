@@ -1,0 +1,5 @@
+subset	ranking_feature	n	positive	prevalence	average_precision	interpretation
+all_test	GC_fraction_only	2120	1060	0.5	0.9264583151356796	exploratory feature ranking, not a fitted biological model
+all_test	CpG_fraction_only	2120	1060	0.5	0.9323277044967682	exploratory feature ranking, not a fitted biological model
+GC_matched_test	GC_fraction_only	600	300	0.5	0.5064554257387286	exploratory feature ranking, not a fitted biological model
+GC_matched_test	CpG_fraction_only	600	300	0.5	0.6794060639482884	exploratory feature ranking, not a fitted biological model

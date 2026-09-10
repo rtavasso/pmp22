@@ -45,15 +45,16 @@ def main():
             'same historical reporter','conditional denominator: EGFP-positive embryos, not all injected embryos',
             'no new interval calculated; nesting by injection batch unavailable','Results preceding Fig. 5',
             'Counts measure reporter localization; not treatment-control expression or population replication')
-    effect('PMP22_INTRONIC','JONES2011','EGR2_site4_mutant_vs_WT','EGR2-dependent_reporter_reduction',
-        50,'percent_reduction_approximate','n not resolved for this numerical statement','reporter',
+    effect('PMP22_INTRONIC','JONES2011','EGR2_site4_induction_ratio_vs_WT_induction_ratio','EGR2_fold_induction_reduction',
+        50,'percent_reduction_in_fold_induction_approximate','reported n=6; independence of measurements unresolved','reporter',
         'author_text_approximate','human insert in mouse cells','B16/F10 with EGR2 expression plasmid',
-        'hg18 +11 kb reporter; see mapping_audit.tsv','wild-type enhancer with same EGR2 transfection',
-        'numerical uncertainty unavailable','Results / Fig. 3B','Not native Schwann RNA; site 2 had the largest effect')
+        'hg18 +11 kb reporter; see mapping_audit.tsv','(mutant +EGR2 / mutant without EGR2) relative to (WT +EGR2 / WT without EGR2)',
+        'SD plotted; numerical uncertainty unavailable','Results / Fig. 3B',
+        'Each construct has its own baseline denominator; not a 50% reduction in induced output or native RNA; site 2 had the largest induction effect')
     for site in [1,3]:
-        effect('PMP22_INTRONIC','JONES2011',f'EGR2_site{site}_mutant_vs_WT','activity relatively unimpaired',
-            '','not_numerically_extracted','n not resolved','reporter','author_qualitative','human insert in mouse cells',
-            'B16/F10 with EGR2 expression plasmid','same +11 kb reporter','wild-type reporter',
+        effect('PMP22_INTRONIC','JONES2011',f'EGR2_site{site}_induction_ratio_vs_WT_induction_ratio','EGR2 fold induction relatively unimpaired',
+            '','not_numerically_extracted','reported n=6; independence of measurements unresolved','reporter','author_qualitative','human insert in mouse cells',
+            'B16/F10 with EGR2 expression plasmid','same +11 kb reporter','WT fold induction; each construct normalized to its own baseline',
             'no equivalence margin or numerical interval','Results / Fig. 3B','Retained negative mutation')
     effect('PMP22_DISTAL','PANTERA2018','C6-C8_two_WT_allele_deletions_vs_C1-C5','WT_allele_Pmp22_RNA',
         .5,'fold_of_control_approximate','3 deletion clones vs 5 deletion-negative clones','native_RNA',
@@ -77,7 +78,7 @@ def main():
                            ('P56','WT=9; heterozygous=7; homozygous=4','total RNA reduced in both deletion genotypes')]:
         effect('PMP22_DISTAL','PANTERA2020',age+'_SE_deletion_vs_WT',outcome,'','direction_only',n,
             'native_RNA','author_qualitative','mouse',age+' sciatic nerve','mm10 chr11:63001867-63042405; see mouse_se_orthology.tsv',
-            'wild-type littermates; Actb normalization','no raw values/CI extracted; author ANOVA only','Fig. 2A-C and Results',
+            'wild-type littermates; Actb normalization','no raw values/CI extracted; author significance retained; panel-specific test not resolved by main-text methods','Fig. 2A-C and Results',
             'Age-specific native mouse deletion; no human fold-change inferred; Mag/Mpz unchanged and Tvp23b increased at P0')
     effect('PMP22_DISTAL','PANTERA2020','P56_SE_deletion_vs_WT','PMP22 protein reduced','','direction_only',
         'western blot: individual nerves shown; numerical n not transcribed','protein','author_qualitative','mouse',

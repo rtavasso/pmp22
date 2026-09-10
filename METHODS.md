@@ -15,6 +15,9 @@ reverse-complemented. The distal envelope spans three human reporters; it is
 not a tested human deletion. Mouse SE mapping covers 54.5% of its source span.
 Its gap-containing target envelope is not interchangeable with aligned blocks.
 Rat injury overlap uses aligned blocks, not the mapped envelope.
+rat_mapping_overlap_audit.tsv retains low-coverage and ambiguous candidates;
+region_rat_injury_support.tsv exposes filtered counts and evaluation status.
+A zero accepted count is not a complete census of biological activity.
 
 ## CAGE and annotation sensitivity
 
@@ -34,6 +37,10 @@ and only one promoter tag: do not infer that P1 is absent.
 ENCFF602YVR supplies IDR-thresholded peaks; ENCFF632FMT supplies broader
 pseudoreplicated peaks. Deduplicate exact chromosome/start/end coordinates.
 These thresholds are sensitivity views of one pooled product, not replicates.
+The IDR file is a pseudoreplicate comparison, not between-donor replication.
+The flattened matrix carries source_interval_ids, evidence_family_id and
+donor_ids. For example, one 25,903 bp H3K27ac interval supplies five region
+overlaps. Families are dependency labels, not independent replicate counts.
 Source alignments trace to ENCDO793LXB (female, 53) and ENCDO271OUW (female, 51).
 The portal adult/child label does not identify an additional child donor.
 Whole-library mapping/complexity metrics cannot substitute for Schwann-subset
@@ -64,6 +71,9 @@ Reuse author differential labels instead of refitting a differential test to
 pooled intervals. Eight precision-ambiguous scientific-notation coordinates
 are rejected, all outside the locus window. Submitted 99-ended BED coordinates
 retain an unresolved source convention.
+Whole-nerve injury measurements leave cell composition unresolved. The 83/38
+window peak counts and partial sham-only C overlaps do not identify a C-specific
+state effect. No submitted differential peak overlaps the exact C reporter.
 
 ENA runs are summed within GEO libraries, not counted as biological replicates.
 PNS SOX10 libraries have 29.6 versus 154.6 million raw reads. Archive read depth
@@ -77,6 +87,14 @@ are retained; nonsignificance is not equivalence. The rat S16 deletion line has
 approximately three chr10 copies. Three deletion clones are compared to five
 controls; its unaffected reporter allele is an internal control. Human
 whole-PMP22-copy deletion is excluded from noncoding-only effect labels.
+Jones 2011 Figure 3 measures EGR2 fold induction: each construct's +EGR2
+activity divided by its own no-EGR2 baseline. AE011 is an approximate 50%
+reduction in that ratio, not induced output. Figure 3 reports n=6 but does not
+resolve measurement independence. Mouse RNA fields retain author significance
+without asserting an ANOVA-only test absent from the panel's documentation.
+Different reporter mutations, induction ratios and native RNA effects are not
+pooled into a potency ranking. Source pairing and conduction-endpoint wording
+remain unresolved; no new P values or loss percentages are reconstructed.
 
 ## Benchmark
 
@@ -101,6 +119,13 @@ probabilities across arbitrary loci or probabilities of experimental success.
 The GC-matched subset has 600 examples in 0.02 GC bins within chromosome,
 occupying 110 blocks. It is evaluated without refitting. Sequence-minus-distance
 AP is 0.013 with CI -0.036 to 0.062, so superiority is not established.
+Matching retains 28.3% of examples and changes the fraction of positives within
+2 kb of an annotated TSS from 78.3% to 53.7%. It does not match CpG frequency.
+The comparability command recomputes CpG from checksum-verified reference
+sequences and scores frozen predictions in explicit strata. Original versus
+matched AP is not a causal decomposition of GC effects. Subgroup AP must carry
+its own prevalence; the matched beyond-2kb stratum has prevalence 0.360 and
+sequence AP 0.580/AUROC 0.746. These post-review analyses do not change v1.
 
 One training-label permutation is a sanity check, not a significance test.
 Conservation, shifted windows and additional CIs were declared after the first
@@ -109,3 +134,15 @@ by the source pipeline: this is a retrospective fixed-label benchmark, not
 end-to-end processing with train-only peak/bias estimation. No count/profile,
 foundation-model head-to-head, human-state or native-perturbation prediction
 is claimed. Candidates are not ranked by the classifier.
+
+## Experimental controls
+
+Two closed, GC/length-matched intervals are retained for their distinct role.
+Two accessible comparison loci now use 409 bp summit-centered strict ATAC
+windows, GC difference <=0.03, outside the PMP22 +/-1 Mb neighborhood,
+GENCODE50 basic transcripts and 2 kb TSS windows, with blacklist/N filtering.
+Selection is deterministic by GC difference then distance, with >=5 kb spacing.
+All four DNA sites remain untested. Absence of a known PMP22 link is not proof
+of no effect. Confirm recruitment and local modulation at every comparison
+site in the experimental donor/state; closed controls alone do not match an
+accessible enhancer's recruitment context. Add non-targeting/effector controls.

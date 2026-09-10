@@ -186,15 +186,36 @@ def injury(regions):
             strand=result.get('strand',''),aligned_blocks=json.dumps(result.get('aligned_blocks',[])),
             interpretation='orthology annotation; tissue response remains rat evidence'))
     table(OUT/'rat_injury_orthology.tsv',mapped)
+    # Preserve lower-coverage candidate evidence rather than hiding it in a zero count.
+    audits=[]
+    for row in rows:
+        accepted=next(p for p in mapped if p['source_track']==row['track']
+                      and p['rn5_start']==row['start'] and p['rn5_end']==row['end'])
+        for candidate in lift.candidates(row['start'],row['end']):
+            for region in regions:
+                if candidate['chrom']!=region['chrom']:continue
+                bp=sum(max(0,min(b,region['end'])-max(a,region['start']))
+                       for a,b in candidate['aligned_blocks'])
+                if not bp:continue
+                use=accepted['status']=='mapped' and candidate['coverage']>=.5
+                audits.append(dict(region_id=region['region_id'],rat_track=row['track'],
+                    source_interval_id=f"rn5:chr10:{row['start']}-{row['end']}",chain_id=candidate['chain_id'],
+                    mapped_fraction=candidate['coverage'],aligned_overlap_bp=bp,
+                    accepted=use,exclusion_reason='' if use else 'below_50pct_source_span' if candidate['coverage']<.5 else accepted['status']))
+    table(OUT/'rat_mapping_overlap_audit.tsv',audits)
     overlaps=[]
     for region in regions:
         for track in ['InjuryDB_peaks','ShamDB_peaks','peaks_Injury','peaks_Sham']:
             hits=[p for p in mapped if p['source_track']==track and p['status']=='mapped'
                   and p['grch38_chrom']==region['chrom'] and any(
                       a<region['end'] and b>region['start'] for a,b in json.loads(p['aligned_blocks']))]
+            filtered={p['source_interval_id'] for p in audits if p['region_id']==region['region_id']
+                      and p['rat_track']==track and not p['accepted']}
             overlaps.append(dict(region_id=region['region_id'],rat_track=track,
                 orthologous_peak_count=len(hits),minimum_mapped_fraction=min((p['mapped_fraction'] for p in hits),default=''),
-                interpretation='aligned blocks only; rat orthology support, not human state effect'))
+                filtered_candidate_peak_count=len(filtered),
+                evaluation_status='partial_mapping_filtered' if filtered else 'accepted_overlap_present' if hits else 'no_accepted_overlap_not_a_functional_negative',
+                interpretation='Counts conditional on source-span mapping and peak calling; not independent experiments, a state effect, or complete activity coverage'))
     table(OUT/'region_rat_injury_support.tsv',overlaps)
     return summary
 

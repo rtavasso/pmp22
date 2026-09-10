@@ -23,3 +23,14 @@ genome. Version 1 is a retrospective classification of these fixed external
 labels, not a raw-read pipeline with train-only peak/bias estimation. This is
 a declared deviation from that broader acceptance goal. No count/profile or
 bias-corrected model is claimed.
+# Adversarial review follow-up, 10 September 2026
+
+After inspecting v1 test results, add `python -m pmp22_atlas comparability`.
+This recomputes CpG from reference sequence, verifies sequence hashes, exports
+test composition and scores the original predictions in explicit TSS strata.
+No labels, splits, models, hyperparameters or original metrics are changed.
+These are post-review exploratory diagnostics, not a new independent test.
+GC matching retains 28.3% of examples and changes promoter proximity; its AP
+cannot be compared with all-test AP as a causal decomposition of GC effects.
+Each subgroup reports prevalence. A distance-based stratum is not an enhancer
+label. CpG-only ranking measures residual composition, not motif mechanism.

@@ -1,8 +1,8 @@
-# Matched DNA controls: test the negative assumption
+# Closed and accessible DNA controls: test distinct assumptions
 
 - **Priority:** 7
 - **Direction:** control
-- **Decisive experiment:** Target both matched intervals alongside non-targeting and known regulatory controls.
+- **Decisive experiment:** Compare closed and accessible DNA sites alongside non-targeting and known regulatory controls, verifying recruitment and local modulation.
 - **Region:** PMP22_DISTAL_C; GRCh38 chr17:15377645-15378054 (0-based, half-open; gene strand minus)
 - **Status:** Proposed experiment; no native human effect measured.
 
@@ -12,7 +12,7 @@ Two 409 bp intervals were selected without expression outcomes, with GC within 0
 
 ## Falsifiable hypothesis
 
-Targeting these intervals does not change native PMP22 under the same assay conditions.
+Two additional accessible comparison sites overlap stringent pooled Schwann ATAC, match C length and GC within 0.03, and lie outside the PMP22 neighborhood, annotated transcripts and 2 kb TSS windows: ACCESSIBLE_C_1 chr17:62694510-62694919; ACCESSIBLE_C_2 chr17:34199943-34200352. Targeting each candidate control does not change native PMP22 under the same assay conditions; this is a hypothesis, not an established negative.
 
 ## Decisive contrast and interpretation
 
@@ -20,7 +20,7 @@ Define an equivalence margin and collect enough donor-level precision before cal
 
 ## Main uncertainty
 
-Closed chromatin and absent annotation do not prove absence of regulatory function. These are untested controls, not benchmark-validated negatives.
+Closed sites can fail recruitment; accessible sites may have regulatory targets. Confirm recruitment and effector activity for every site. These controls test different assumptions and are not benchmark-validated negatives.
 
 ## Shared measurement contract
 
@@ -30,6 +30,11 @@ one study or donor exclusively to a state. Include non-targeting controls, an
 effector-only control, the proposed matched DNA intervals, and at least two
 independent targeting reagents per region. Reagents and on-target occupancy
 need validation before interpreting a negative expression result.
+Include the two proposed accessible comparison loci alongside the closed DNA
+controls. Confirm comparable recruitment and local chromatin modulation in the
+actual donor/state; absence of recruitment at a closed site is not a functional
+negative control for inhibition at an accessible enhancer. Accessible comparison
+loci are also untested and may regulate other genes or PMP22.
 
 Primary endpoint: donor-paired change in total PMP22 RNA relative to the matched
 control. Measure P1/exon1A and P2/exon1B initiation separately; measure protein

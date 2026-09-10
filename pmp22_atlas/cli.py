@@ -113,6 +113,27 @@ def build(output: Path) -> dict[str, object]:
     for r in optional_table("region_bulk_support.tsv"):
         append_observation(r["region_id"],r["file"],r["target"],r["unique_peak_intervals"],"unique peak intervals",
             "human bulk tibial nerve","Shared donors across assays; cell composition unresolved")
+    # Preserve the same peak identifier across region rows and shared source families.
+    peak_ids={};families={};donors={}
+    for p in optional_table('bulk_provenance.tsv'):
+        families[p['selected_file']]=p['experiment']
+        donors.setdefault(p['selected_file'],set()).add(p['donor'])
+    pool={p['donor'] for p in optional_table('atac_provenance.tsv')}
+    for source in ['ENCFF602YVR','ENCFF632FMT']:
+        families[source]='ENCSR301DUJ';donors[source]=pool
+    peaks=optional_table('bulk_locus_peaks.tsv')
+    for name in ['schwann_atac_locus.tsv','schwann_atac_broad_locus.tsv']:
+        peaks.extend(dict(p,file=p['source']) for p in optional_table(name))
+    for p in peaks:
+        for rid,r in region_map.items():
+            if p['chrom']==r['chrom'] and int(p['start'])<int(r['end']) and int(p['end'])>int(r['start']):
+                peak_ids.setdefault((p['file'],rid),set()).add(f"{p['file']}:{p['chrom']}:{p['start']}-{p['end']}")
+    for row in matrix:
+        source=row['source_id'];ids=peak_ids.get((source,row['region_id']),set())
+        row['evidence_family_id']=families.get(source,source)
+        row['source_interval_ids']=';'.join(sorted(ids))
+        row['donor_ids']=';'.join(sorted(donors.get(source,set())))
+        row['support_status']=('observed_peak_overlap' if ids else 'not_detected_in_selected_file') if row['unit']=='unique peak intervals' else 'typed_assay_or_reference_record'
     fields = tuple(matrix[0])
     write_tsv(output / "evidence_matrix.tsv", matrix, fields)
 
@@ -150,13 +171,13 @@ def main(argv: list[str] | None = None) -> int:
     download_parser = sub.add_parser("download", help="download and checksum pinned public inputs")
     download_parser.add_argument("--force", action="store_true")
     sub.add_parser("analyze", help="analyze downloaded processed tracks at the rn5 Pmp22 locus")
-    for command in ['human','context','benchmark','supplemental','report']:
+    for command in ['human','context','benchmark','supplemental','comparability','report']:
         sub.add_parser(command, help=f'run {command} analysis (analysis dependencies required)')
     args = parser.parse_args(argv)
     if args.command in {"download", "analyze"}:
         from .acquire import analyze, download
         result = download(args.force) if args.command == "download" else analyze()
-    elif args.command in {'human','context','benchmark','supplemental','report'}:
+    elif args.command in {'human','context','benchmark','supplemental','comparability','report'}:
         import importlib
         importlib.import_module('pmp22_atlas.'+args.command).main()
         return 0

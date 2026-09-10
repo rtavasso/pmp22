@@ -5,4 +5,4 @@ candidate	priority	direction	decisive_experiment	dossier
 03_p1_selective_repression	4	promoter-specific repression	Compare P1-directed inhibition with P2-directed and non-targeting controls in the same donor/state.	candidate_dossiers\03_p1_selective_repression.md
 04_state_specific_distal	5	state-conditional regulation	Cross mature/myelinating and repair-like states with C perturbation within each donor.	candidate_dossiers\04_state_specific_distal.md
 07_deletion_hnpp_activation	6	activation; deletion-HNPP only	In deletion-HNPP lines with an intact retained coding allele, test graded local activation and measure RNA, protein and function.	candidate_dossiers\07_deletion_hnpp_activation.md
-05_negative_control	7	control	Target both matched intervals alongside non-targeting and known regulatory controls.	candidate_dossiers\05_negative_control.md
+05_negative_control	7	control	Compare closed and accessible DNA sites alongside non-targeting and known regulatory controls, verifying recruitment and local modulation.	candidate_dossiers\05_negative_control.md

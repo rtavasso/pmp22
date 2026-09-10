@@ -120,5 +120,49 @@ def main():
     print('Bulk donors:',len({r['donor'] for r in provenance}))
     print('PMP22 bulk TPM:',[(r['experiment'],r['TPM']) for r in rna if r['primary_PMP22_gene']])
     print('Controls:',[(r['control_id'],r['start'],r['end']) for r in chosen])
+    # Accessible comparison sites address recruitment/activity mismatches of closed controls.
+    annotation=json.loads((CACHE/'gencode50_chr17.json').read_text())['wgEncodeGencodeBasicV50']
+    transcripts=IntervalIndex([(t['txStart'],t['txEnd']) for t in annotation])
+    tss=[t['txStart'] if t['strand']=='+' else t['txEnd']-1 for t in annotation]
+    options=[];seen=set()
+    for p in bed_rows(CACHE/'ENCFF602YVR.bed.gz'):
+        if p[0]!='chr17' or int(p[9])<0:continue
+        center=int(p[1])+int(p[9]);start=center-length//2;end=start+length
+        if (start,end) in seen:continue
+        seen.add((start,end))
+        if start<16265360 and end>14229778:continue
+        if blacklist.overlaps(start,end) or transcripts.overlaps(start,end):continue
+        distance=min(abs(center-t) for t in tss)
+        if distance<=2000:continue
+        s=seq[start:end]
+        if len(s)!=length or any(b not in 'ACGT' for b in s):continue
+        delta=abs(gc(s)-targetgc)
+        if delta>.03:continue
+        options.append((delta,abs(center-int(positive['start'])),start,end,gc(s),distance,
+                        f'ENCFF602YVR:chr17:{p[1]}-{p[2]}'))
+    accessible=[]
+    for delta,_,start,end,gcvalue,distance,source in sorted(options):
+        if any(abs(start-r['start'])<5000 for r in accessible):continue
+        accessible.append(dict(control_id=f'ACCESSIBLE_C_{len(accessible)+1}',chrom='chr17',start=start,end=end,
+            matched_region='PMP22_DISTAL_C',gc_fraction=gcvalue,positive_gc=targetgc,gc_difference=delta,
+            distance_to_annotated_TSS=distance,source_interval_id=source,
+            rule='409 bp summit-centered stringent ATAC; GC difference <=0.03; outside PMP22 +/-1Mb neighborhood, GENCODE50 basic transcripts, 2kb TSS windows, blacklist',
+            status='proposed accessible comparison; PMP22 non-effect unproven; confirm recruitment and local modulation in experimental state'))
+        if len(accessible)==2:break
+    if len(accessible)!=2:raise ValueError('Insufficient accessible comparison sites')
+    table(OUT/'candidate_accessible_controls.tsv',accessible)
+    selected_ids={r['source_interval_id'] for r in accessible}
+    selected_peaks={}
+    for p in bed_rows(CACHE/'ENCFF602YVR.bed.gz'):
+        identity=f'ENCFF602YVR:{p[0]}:{p[1]}-{p[2]}'
+        if identity in selected_ids:
+            selected_peaks[identity]=dict(source_interval_id=identity,chrom=p[0],start=int(p[1]),end=int(p[2]),
+                summit=int(p[1])+int(p[9]),source_file='ENCFF602YVR')
+    table(OUT/'accessible_control_source_peaks.tsv',selected_peaks.values())
+    with (OUT/'accessible_controls.grch38.bed').open('w') as bed, (OUT/'accessible_controls.grch38.fa').open('w') as fa:
+        for r in accessible:
+            bed.write(f"chr17\t{r['start']}\t{r['end']}\t{r['control_id']}\n")
+            fa.write(f">{r['control_id']} GRCh38 chr17:{r['start']}-{r['end']} forward_reference\n{seq[r['start']:r['end']]}\n")
+    print('Accessible comparison sites:',[(r['control_id'],r['start'],r['end']) for r in accessible])
 
 if __name__=='__main__':main()

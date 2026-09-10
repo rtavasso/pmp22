@@ -13,6 +13,7 @@ def main():
     def interval(rid):
         r=regions[rid];return f"GRCh38 {r['chrom']}:{r['start']}-{r['end']} (0-based, half-open; gene strand minus)"
     negatives=read(ROOT/'data/human/candidate_negative_controls.tsv')
+    accessible=read(ROOT/'data/human/candidate_accessible_controls.tsv')
     common="""
 Use independently genotyped human Schwann donor lines with the state confirmed
 in each differentiation. Cross donors with intervention and state; do not assign
@@ -20,6 +21,11 @@ one study or donor exclusively to a state. Include non-targeting controls, an
 effector-only control, the proposed matched DNA intervals, and at least two
 independent targeting reagents per region. Reagents and on-target occupancy
 need validation before interpreting a negative expression result.
+Include the two proposed accessible comparison loci alongside the closed DNA
+controls. Confirm comparable recruitment and local chromatin modulation in the
+actual donor/state; absence of recruitment at a closed site is not a functional
+negative control for inhibition at an accessible enhancer. Accessible comparison
+loci are also untested and may regulate other genes or PMP22.
 
 Primary endpoint: donor-paired change in total PMP22 RNA relative to the matched
 control. Measure P1/exon1A and P2/exon1B initiation separately; measure protein
@@ -52,7 +58,7 @@ effect can still produce a broad downstream disease-response program.
          'Orthologous rat sham peaks overlap C, but no submitted sham-enriched differential peak overlaps its exact reporter interval. A mouse deletion covers a much larger, partly conserved domain.'),
         ('02_intronic_repression','Intronic enhancer: test a second regulatory route',2,'repression','PMP22_INTRONIC',
          'Test the intronic interval alone and jointly with distal C; distinguish transcription from splicing.',
-         'The 243 bp reference interval maps reciprocally from the Jones 2011 reporter and overlaps stringent Schwann accessibility plus bulk H3K27ac/EP300. Published EGR2 site-4 reporter mutation reduced activity by approximately 50% in a mouse reporter-cell context.',
+         'The 243 bp reference interval maps reciprocally from the Jones 2011 reporter and overlaps stringent Schwann accessibility plus bulk H3K27ac/EP300. EGR2 site-4 mutation reduced EGR2 fold induction by approximately 50% in mouse B16/F10 cells. Each construct was normalized to its own no-EGR2 baseline; this is not a 50% reduction in induced output. Figure 3 reports n=6, with measurement independence unresolved.',
          'The intronic element contributes to native PMP22 transcription independently of distal C.',
          'Measure nascent initiation, common-exon RNA, splice junctions and protein. RNA loss driven by abnormal splicing or broad identity change would not establish enhancer-selective repression.',
          'Intronic targeting may alter elongation/splicing or spread repression. The larger transgenic construct is a separate interval and must not replace the small reporter without an explicit comparison.'),
@@ -64,20 +70,20 @@ effect can still produce a broad downstream disease-response program.
          'GENCODE50 and RefSeq promoter boundaries differ; counts are robust here but the exact targeting window requires TSS confirmation.'),
         ('04_state_specific_distal','Distal C: test a within-donor state interaction',5,'state-conditional regulation','PMP22_DISTAL_C',
          'Cross mature/myelinating and repair-like states with C perturbation within each donor.',
-         'Rat injury data contain 83 sham versus 38 injured-nerve peak records in the 2 Mb Pmp22 window. The mapped C interval has sham-only overlap, but no exact C differential-peak call. These are nomination clues, not a human state effect.',
+         'C is a human accessibility-supported interval chosen for a falsifiable state-interaction test. Current C-specific differential evidence is unavailable: two partially mapped rat sham peaks overlap 63 and 127 bp of its human interval, but no submitted differential peak overlaps exact C. Whole-nerve peak counts across a 2 Mb neighborhood do not increase its priority or establish regulation within Schwann cells.',
          'The effect of C inhibition on PMP22 differs between experimentally confirmed human states.',
          'Estimate the intervention-by-state interaction, with both states represented in every donor and balanced batches. Compare targeting occupancy across states. A study-versus-state comparison cannot identify this interaction.',
-         'The current human CAGE and adult tissue ATAC come from different source contexts and cannot establish a developmental or injury trajectory.'),
-        ('05_negative_control','Matched DNA controls: test the negative assumption',7,'control','PMP22_DISTAL_C',
-         'Target both matched intervals alongside non-targeting and known regulatory controls.',
+         'Human CAGE and adult ATAC cannot establish a state trajectory. Whole-nerve injury chromatin also confounds regulation within cells with cell composition. Orthology counts are conditional on mapping thresholds; inspect filtered candidates, not only accepted counts.'),
+        ('05_negative_control','Closed and accessible DNA controls: test distinct assumptions',7,'control','PMP22_DISTAL_C',
+         'Compare closed and accessible DNA sites alongside non-targeting and known regulatory controls, verifying recruitment and local modulation.',
          'Two 409 bp intervals were selected without expression outcomes, with GC within 0.03 of C, outside broad ATAC plus a 1 kb buffer, at least 10 kb from known reporter/promoter intervals, outside annotated transcripts and the ENCODE blacklist: '+ '; '.join(f"{r['control_id']} chr17:{r['start']}-{r['end']}" for r in negatives)+'.',
-         'Targeting these intervals does not change native PMP22 under the same assay conditions.',
+         'Two additional accessible comparison sites overlap stringent pooled Schwann ATAC, match C length and GC within 0.03, and lie outside the PMP22 neighborhood, annotated transcripts and 2 kb TSS windows: '+ '; '.join(f"{r['control_id']} chr17:{r['start']}-{r['end']}" for r in accessible)+'. Targeting each candidate control does not change native PMP22 under the same assay conditions; this is a hypothesis, not an established negative.',
          'Define an equivalence margin and collect enough donor-level precision before calling a control functionally negative. A detected effect rejects the negative assumption and requires local-gene/identity investigation.',
-         'Closed chromatin and absent annotation do not prove absence of regulatory function. These are untested controls, not benchmark-validated negatives.'),
+         'Closed sites can fail recruitment; accessible sites may have regulatory targets. Confirm recruitment and effector activity for every site. These controls test different assumptions and are not benchmark-validated negatives.'),
         ('06_distal_a_b','Distal A versus B: discriminate factor-dependent regulation',3,'repression / mechanistic comparison','PMP22_DISTAL_A',
          'Test A and B separately with matched local inhibition and factor-occupancy measurements.',
          'A and B are broad-peak-only Schwann intervals; both have bulk H3K27ac. A has EP300 overlap while B lacks the selected EP300 peak. Published S16 reporter effects differ: A SOX10-site mutation approximately 85% loss; B EGR2_1 approximately 45% loss. B SOX10/EGR2_2 mutations were retained negative results.',
-         'A and B have different native regulatory contributions depending on the confirmed SOX10/EGR2 context.',
+         'A and B may have different native regulatory contributions depending on the confirmed SOX10/EGR2 context. Different reporter mutations and denominators do not establish their relative native strength.',
          'Compare region-specific inhibition without first perturbing the whole transcription-factor program. Loss of reporter activity alone does not establish native human regulation; factor knockdown alone can change cell identity.',
          'B interval: '+interval('PMP22_DISTAL_B')+'. Peak-threshold sensitivity is uncertainty, not inactivity. Published mutation sequences require supplement/plasmid confirmation before recreation.'),
         ('07_deletion_hnpp_activation','Deletion-HNPP: test activation of the retained normal locus',6,'activation; deletion-HNPP only','PMP22_INTRONIC',

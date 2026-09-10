@@ -31,7 +31,8 @@ class ChainMap:
                     if len(fields)==3:
                         source+=size+int(fields[1]);target+=size+int(fields[2])
 
-    def map_interval(self,start,end,min_coverage=0.95):
+    def candidates(self,start,end,min_coverage=0.0):
+        """Return distinct chain candidates, including low coverage for missingness audits."""
         if start<0 or end<=start: raise ValueError('Invalid half-open interval')
         candidates=[]
         for chain in self.chains:
@@ -54,9 +55,13 @@ class ChainMap:
         for item in candidates:
             key=(item['chrom'],item['start'],item['end'],item['strand'])
             if key not in unique or item['score']>unique[key]['score']:unique[key]=item
+        return list(unique.values())
+
+    def map_interval(self,start,end,min_coverage=0.95):
+        unique=self.candidates(start,end,min_coverage)
         if len(unique)!=1:
             return dict(status='unmapped' if not unique else 'ambiguous',candidate_count=len(unique))
-        return dict(status='mapped',**next(iter(unique.values())))
+        return dict(status='mapped',**unique[0])
 
 
 class IntervalIndex:

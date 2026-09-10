@@ -8,7 +8,7 @@
 
 ## Evidence and rationale
 
-Rat injury data contain 83 sham versus 38 injured-nerve peak records in the 2 Mb Pmp22 window. The mapped C interval has sham-only overlap, but no exact C differential-peak call. These are nomination clues, not a human state effect.
+C is a human accessibility-supported interval chosen for a falsifiable state-interaction test. Current C-specific differential evidence is unavailable: two partially mapped rat sham peaks overlap 63 and 127 bp of its human interval, but no submitted differential peak overlaps exact C. Whole-nerve peak counts across a 2 Mb neighborhood do not increase its priority or establish regulation within Schwann cells.
 
 ## Falsifiable hypothesis
 
@@ -20,7 +20,7 @@ Estimate the intervention-by-state interaction, with both states represented in 
 
 ## Main uncertainty
 
-The current human CAGE and adult tissue ATAC come from different source contexts and cannot establish a developmental or injury trajectory.
+Human CAGE and adult ATAC cannot establish a state trajectory. Whole-nerve injury chromatin also confounds regulation within cells with cell composition. Orthology counts are conditional on mapping thresholds; inspect filtered candidates, not only accepted counts.
 
 ## Shared measurement contract
 
@@ -30,6 +30,11 @@ one study or donor exclusively to a state. Include non-targeting controls, an
 effector-only control, the proposed matched DNA intervals, and at least two
 independent targeting reagents per region. Reagents and on-target occupancy
 need validation before interpreting a negative expression result.
+Include the two proposed accessible comparison loci alongside the closed DNA
+controls. Confirm comparable recruitment and local chromatin modulation in the
+actual donor/state; absence of recruitment at a closed site is not a functional
+negative control for inhibition at an accessible enhancer. Accessible comparison
+loci are also untested and may regulate other genes or PMP22.
 
 Primary endpoint: donor-paired change in total PMP22 RNA relative to the matched
 control. Measure P1/exon1A and P2/exon1B initiation separately; measure protein

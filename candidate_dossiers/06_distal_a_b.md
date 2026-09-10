@@ -12,7 +12,7 @@ A and B are broad-peak-only Schwann intervals; both have bulk H3K27ac. A has EP3
 
 ## Falsifiable hypothesis
 
-A and B have different native regulatory contributions depending on the confirmed SOX10/EGR2 context.
+A and B may have different native regulatory contributions depending on the confirmed SOX10/EGR2 context. Different reporter mutations and denominators do not establish their relative native strength.
 
 ## Decisive contrast and interpretation
 
@@ -30,6 +30,11 @@ one study or donor exclusively to a state. Include non-targeting controls, an
 effector-only control, the proposed matched DNA intervals, and at least two
 independent targeting reagents per region. Reagents and on-target occupancy
 need validation before interpreting a negative expression result.
+Include the two proposed accessible comparison loci alongside the closed DNA
+controls. Confirm comparable recruitment and local chromatin modulation in the
+actual donor/state; absence of recruitment at a closed site is not a functional
+negative control for inhibition at an accessible enhancer. Accessible comparison
+loci are also untested and may regulate other genes or PMP22.
 
 Primary endpoint: donor-paired change in total PMP22 RNA relative to the matched
 control. Measure P1/exon1A and P2/exon1B initiation separately; measure protein

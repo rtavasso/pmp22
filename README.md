@@ -25,6 +25,7 @@ requirements-analysis.txt, then run these commands with its Python executable:
     python scripts/build_dossiers.py
     python -m pmp22_atlas benchmark
     python -m pmp22_atlas supplemental
+    python -m pmp22_atlas comparability
     python -m pmp22_atlas build --output data/release
     python -m pmp22_atlas report
     python -m unittest discover -s tests -v
@@ -57,9 +58,17 @@ Report generation uses committed tables and does not refit models.
 - Eleven bulk-tibial assays represent four donors, overlapping the two ATAC
   donors. They are not eleven independent donor validations.
 - The sequence composite reaches AP 0.966 on 2,120 held-out genomic windows
-  but 0.784 on 600 GC-matched windows. Distance-to-TSS reaches 0.771 there;
+  and 0.784 on a different, 600-example GC-matched population. Matching retains
+  28.3% of examples, changes promoter composition and leaves CpG differences;
+  the score change cannot be attributed to GC alone. Distance-to-TSS reaches 0.771 there;
   the paired AP difference CI includes zero. Sequence-specific superiority,
   disease prediction and enhancer-to-gene links are not established.
+- The matched subset beyond 2 kb from annotated TSSs has 139 positives and
+  247 backgrounds: frozen sequence AP 0.580, AUROC 0.746, prevalence 0.360.
+  This post-review diagnostic is not independent validation of enhancers.
+- Jones 2011's intronic 50% effect is reduced EGR2 fold induction, each construct
+  normalized to its own no-EGR2 baseline; it is not a directly comparable loss
+  of induced output. See REVIEW_RESOLUTION.md for all adversarial corrections.
 - Standard Borzoi splits place PMP22 and its centered 524,288 bp contexts
   in training fold7. No independent PMP22 test or foundation-model
   head-to-head comparison is claimed.

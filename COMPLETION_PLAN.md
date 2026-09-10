@@ -11,7 +11,7 @@ The computational public-data release is delivered. The original scientific cont
 | rodent_state_context | completed_descriptively | Twelve inputs replayed; injury files/QC/orthology | No new differential or transported human effect |
 | genomic_benchmark | completed_for_binary_task | Frozen split; baselines; conservation; uncertainty and controls | No count/profile or independent human-effect benchmark |
 | Borzoi_eligibility | resolved_for_standard_checkpoints | PMP22 and centered full input contexts are in training fold7 | No independent PMP22 test from these models |
-| candidate_handoff | completed | Seven dossiers, two untested controls, B/D handoff | Lab targeting, genotyping, power and outcomes remain |
+| candidate_handoff | completed | Seven dossiers; two closed and two accessible untested DNA controls; B/D handoff | Lab targeting, genotyping, recruitment/local modulation, power and outcomes remain |
 | native_human_causality | requires_new_evidence | Not asserted | Matched noncoding perturbation assays |
 | human_state_generalization | requires_new_evidence | Not asserted | Crossed donor/state design |
 | human_contact_assignment | unresolved | No measured loop asserted | Matched contact or perturbation evidence |
