@@ -1,0 +1,21 @@
+{
+  "validated_at": "2026-09-10T20:27:55.457285+00:00",
+  "tested_code_commit": "942ce3832caff4e448f5ccbfb4f84f6a5370a8b5",
+  "unit_and_integrity_tests": {
+    "passed": 24,
+    "failed": 0,
+    "fresh_checkout_passed": true
+  },
+  "public_resource_checksums": {
+    "extended_lock_files": 112,
+    "original_manifest_files": 12,
+    "result": "passed"
+  },
+  "public_metadata_snapshots": {
+    "count": 62,
+    "fresh_checkout_offline_restore": "passed; network calls rejected during test"
+  },
+  "benchmark_replay": "passed; frozen protocol and split SHA256 preserved; primary metrics reproduced",
+  "visual_QA": "three scientific figures inspected; report overview and benchmark rendered in browser; portable font fallback verified",
+  "scope_limit": "software and public-data reproducibility; not native human causal or state validation"
+}
