@@ -1,21 +1,51 @@
 {
-  "validated_at": "2026-09-10T20:27:55.457285+00:00",
-  "tested_code_commit": "942ce3832caff4e448f5ccbfb4f84f6a5370a8b5",
+  "validated_at": "2026-09-11T00:01:04.518588+00:00",
+  "tested_code_commit": "589f16f56fce0e5d3d01ac43f6abf5c229bfa3cc",
   "unit_and_integrity_tests": {
-    "passed": 24,
+    "passed": 28,
     "failed": 0,
     "fresh_checkout_passed": true
   },
   "public_resource_checksums": {
     "extended_lock_files": 112,
     "original_manifest_files": 12,
-    "result": "passed"
+    "result": "reverified after corrections"
   },
   "public_metadata_snapshots": {
     "count": 62,
-    "fresh_checkout_offline_restore": "passed; network calls rejected during test"
+    "fresh_checkout_offline_restore": "passed; requests.Session.get rejected"
   },
-  "benchmark_replay": "passed; frozen protocol and split SHA256 preserved; primary metrics reproduced",
-  "visual_QA": "three scientific figures inspected; report overview and benchmark rendered in browser; portable font fallback verified",
-  "scope_limit": "software and public-data reproducibility; not native human causal or state validation"
+  "correction_reanalysis": [
+    "human interval/activity/orthology",
+    "bulk context and four DNA controls",
+    "assay curation and dossiers",
+    "reference-verified CpG and TSS-stratified frozen-model performance",
+    "evidence source IDs",
+    "standalone report"
+  ],
+  "benchmark_integrity": "original protocol/split bytes and Git prediction/parameter/primary metric content unchanged",
+  "visual_QA": "revised benchmark figure visually inspected; HTML anchors, embedded SVG and data downloads verified",
+  "report_downloads_verified": 21,
+  "scope_limit": "post-review exploratory reanalysis; no new human causal, state or independent model-validation evidence",
+  "previous_release_validation": {
+    "validated_at": "2026-09-10T20:27:55.457285+00:00",
+    "tested_code_commit": "942ce3832caff4e448f5ccbfb4f84f6a5370a8b5",
+    "unit_and_integrity_tests": {
+      "passed": 24,
+      "failed": 0,
+      "fresh_checkout_passed": true
+    },
+    "public_resource_checksums": {
+      "extended_lock_files": 112,
+      "original_manifest_files": 12,
+      "result": "passed"
+    },
+    "public_metadata_snapshots": {
+      "count": 62,
+      "fresh_checkout_offline_restore": "passed; network calls rejected during test"
+    },
+    "benchmark_replay": "passed; frozen protocol and split SHA256 preserved; primary metrics reproduced",
+    "visual_QA": "three scientific figures inspected; report overview and benchmark rendered in browser; portable font fallback verified",
+    "scope_limit": "software and public-data reproducibility; not native human causal or state validation"
+  }
 }
